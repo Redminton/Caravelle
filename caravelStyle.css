@@ -4,5 +4,10 @@
     text-align: center;
 }
 body {
-    background-color: rgb(205, 226, 157);
+    background-color: rgb(174, 222, 224);
+}
+.navegacao{
+    display: flex;
+    font-size: larger;
+
 }
