@@ -1,13 +1,15 @@
 * {
     font-family: sans-serif;
-    justify-content: center;
-    text-align: center;
 }
 body {
     background-color: rgb(174, 222, 224);
 }
 .navegacao{
-    display: flex;
     font-size: larger;
-
+}
+td{
+    width: 100%;
+}
+.nome{
+    margin-left: 10%;
 }
