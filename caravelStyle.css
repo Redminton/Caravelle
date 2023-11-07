@@ -5,11 +5,11 @@ body {
     background-color: rgb(174, 222, 224);
 }
 .navegacao{
-    font-size: larger;
 }
 td{
     width: 100%;
 }
 .nome{
-    margin-left: 10%;
+    margin-left: 20%;
+    font-size: 200%;
 }
