@@ -1,0 +1,4 @@
+-Calculadora de preço de estadia do hotel
+-Diferentes tipos de quarto (classes)
+-login admin para mudar a cotação do dólar (futuramente API?)
+-Cartões vale hotel (com prazo de validade, 6 meses)
