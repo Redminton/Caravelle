@@ -2,3 +2,4 @@
 -Diferentes tipos de quarto (classes)
 -login admin para mudar a cotação do dólar (futuramente API?)
 -Cartões vale hotel (com prazo de validade, 6 meses)
+-todos os hotéis são iguais (arquitetura), a única coisa que muda é a localização e a culinária
