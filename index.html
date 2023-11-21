@@ -10,8 +10,8 @@
 <link rel="stylesheet" href="nivo-slider.css" type="text/css" media="screen" />
 <link rel="stylesheet" type="text/css" href="css/ddsmoothmenu.css" />
 <script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/ddsmoothmenu.js">
-</script>
+<script type="text/javascript" src="js/ddsmoothmenu.js"></script>
+    <script type="text/javascript" src="login.js"></script>
 
 <script type="text/javascript">
 
@@ -34,7 +34,7 @@ ddsmoothmenu.init({
     	<div id="site_title"><h1><a href="#">Caravelle</a></h1></div>
         <div id="header_right">
         	<p>
-	        <a href="#">Minha conta</a> | <a href="#">Lista de desejos</a> | <a href="#">Carrinho</a> | <a href="#">Sair</a> | <a href="#">Entrar</a></p>
+	        <a href="#">Minha conta</a> | <a href="#">Lista de desejos</a> | <a href="#">Carrinho</a> | <a href="#">Sair</a> | <button id="bot_login" onclick="login()">Entrar</button>
             <p>
             	Meu Carrinho: <strong>3 items</strong> ( <a href="shoppingcart.html">Mostrar</a> )
 			</p>
@@ -130,6 +130,26 @@ ddsmoothmenu.init({
                 </div>
             </div>
         </div>
+        <div>
+            <div id="content" class="float_r">
+                <div id="login">  
+                    <div class="login-container">
+                        <h2>Acesse sua conta</h2>
+                        <form>
+                            <label for="username">Usuário:</label>
+                            <input type="text" id="username" name="username" required>
+                
+                            <label for="password">Senha:</label>
+                            <input type="password" id="password" name="password" required>
+                
+                            <button onclick="acesso()">Entrar</button>
+                        </form>
+                    </div>
+                </div>
+                <br>
+        </div>
+        </div>
+
         <div id="content" class="float_r">
         	<div id="slider-wrapper">
                 <div id="slider" class="nivoSlider">
@@ -145,7 +165,7 @@ ddsmoothmenu.init({
             <script type="text/javascript" src="js/jquery-1.4.3.min.js"></script>
             <script type="text/javascript" src="js/jquery.nivo.slider.pack.js"></script>
             <script type="text/javascript">
-            $(window).load(function() {
+              $(window).load(function() {
                 $('#slider').nivoSlider();
             });
             </script>
@@ -153,24 +173,30 @@ ddsmoothmenu.init({
             <div class="product_box">
 	            <h3>Curitiba</h3>
             	<a href="productdetail.html"><img src="images/product/001.jpg" alt="dest1" /></a>
-                <p>Nulla rutrum neque vitae erat condimentum eget malesuada.</p>
-                <p class="product_price">$ 100</p>
+                <p>
+                    "Curitiba: Onde a modernidade abraça a natureza com charme e eficiência."
+                </p>
+                <p class="product_price">$ 100 a day</p>
                 <a href="shoppingcart.html" class="addtocart"></a>
                 <a href="productdetail.html" class="detail"></a>
             </div>        	
             <div class="product_box">
             	<h3>Marrakesh</h3>
             	<a href="productdetail.html"><img src="images/product/002.jpg" alt="dest2" /></a>
-                <p>Sed congue, erat id congue vehicula.wsdwqdqwdwq</p>
-              <p class="product_price">$ 80</p>
+                <p>
+                    "Marrakesh: Um caleidoscópio cultural no coração do Marrocos."
+                </p>
+              <p class="product_price">$ 80 a day</p>
                 <a href="shoppingcart.html" class="addtocart"></a>
                 <a href="productdetail.html" class="detail"></a>
             </div>        	
             <div class="product_box no_margin_right">
             	<h3>Luxor</h3>
             	<a href="productdetail.html"><img src="images/product/003.jpg" alt="dest3" /></a>
-                <p>Morbi non risus vitae est vestibulum tincidunt ac eget metus.</p>
-              <p class="product_price">$ 60</p>
+                <p>
+                    "Luxor: O esplendor eterno às margens do Nilo."
+                </p>
+              <p class="product_price">$ 60 a day</p>
                 <a href="shoppingcart.html" class="addtocart"></a>
                 <a href="productdetail.html" class="detail"></a>
             </div>   
@@ -180,24 +206,30 @@ ddsmoothmenu.init({
 <div class="product_box">
             	<h3>Melbourne</h3>
            	<a href="productdetail.html"><img src="images/product/004.jpg" alt="dest4" /></a>
-            <p>Sed semper euismod dolor sit amet interdum. Phasellus in mi eros.</p>
-      <p class="product_price">$ 220</p>
+            <p>
+                "Melbourne: Uma fusão vibrante de arte, café e vida urbana à beira da baía."
+            </p>
+      <p class="product_price">$ 220 a day</p>
                 <a href="shoppingcart.html" class="addtocart"></a>
                 <a href="productdetail.html" class="detail"></a>
             </div>        	
             <div class="product_box">
 	            <h3>Napóles</h3>
             	<a href="productdetail.html"><img src="images/product/005.jpg" alt="dest5" /></a>
-                <p>Maecenas porttitor erat quis leo pellentesque molestie.</p>
-              <p class="product_price">$ 180</p>
+                <p>
+                    "Nápoles: Onde a história se mistura com a paixão, à sombra do Vesúvio."
+                </p>
+              <p class="product_price">$ 180 a day</p>
                 <a href="shoppingcart.html" class="addtocart"></a>
                 <a href="productdetail.html" class="detail"></a>
             </div>        	
             <div class="product_box no_margin_right">
             	<h3>Mumbai</h3>
             	<a href="productdetail.html"><img src="images/product/006.jpg" alt="dest6" /></a>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <p class="product_price">$ 160</p>
+                <p>
+                    "Mumbai: Lugar onde a tradição indiana encontra a modernidade."
+                </p>
+                <p class="product_price">$ 160 a day</p>
                 <a href="shoppingcart.html" class="addtocart"></a>
                 <a href="productdetail.html" class="detail"></a>
             </div>        	
@@ -206,7 +238,7 @@ ddsmoothmenu.init({
     </div>
     
     <div id="templatemo_footer">
-    	<p><a href="#">início</a> | <a href="#">Produtos</a> | <a href="#">sobre</a> | <a href="#">FAQs</a> | <a href="#">Pagamento</a> | <a href="#">Contato</a>
+    	<p><a href="#">início</a> | <a href="#">Produtos</a> | <a href="#">Sobre</a> | <a href="#">FAQs</a> | <a href="#">Pagamento</a> | <a href="#">Contato</a>
 		</p>
     	Copyright © 1500 <a href="#">Caravelle LTDA</a></div> 
     

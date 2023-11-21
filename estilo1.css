@@ -246,6 +246,71 @@ h6 { font-size: 12px; margin: 0 0 5px; padding: 0; }
 #templatemo_footer a {
 	color: #fff;
 }
+#login{
+	display: none;
+}
+#bot_login{
+	border: none;
+	background-color: transparent;
+	color: #FFFFFF;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 12px;
+}
+#bot_login:hover { 
+	cursor: pointer;
+	text-decoration: underline; }
+	.login-container {
+		background-image: 	url(images/img_head.jpg);
+		padding: 20px;
+		border-radius: 8px;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		animation: descendo 0.5s ease-out;
+		color: #333;
+	}
+	@keyframes descendo {
+		from {
+			transform: translateY(-10%);
+			opacity: 0;
+		}
+		to {
+			transform: translateY(0);
+			opacity: 1;
+		}
+	}
+	.login-container label {
+		display: block;
+		margin-bottom: 8px;
+	}
+
+	.login-container input {
+		width: 100%;
+		padding: 8px;
+		margin-bottom: 16px;
+		box-sizing: border-box;
+	}
+
+	.login-container button {
+		background-color: #4caf50;
+		color: #fff;
+		padding: 10px;
+		border: none;
+		border-radius: 4px;
+		cursor: pointer;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*============================*/
 /*=== Custom Slider Styles ===*/
