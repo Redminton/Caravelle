@@ -34,7 +34,7 @@ ddsmoothmenu.init({
     	<div id="site_title"><h1><a href="#">Caravelle</a></h1></div>
         <div id="header_right">
         	<p>
-	        <a href="#">Minha conta</a> | <a href="#">Lista de desejos</a> | <a href="#">Carrinho</a> | <a href="#">Sair</a> | <button id="bot_login" onclick="login()">Entrar</button>
+	        <a href="#">Minha conta</a> | <a href="#">Lista de desejos</a> | <a href="#">Carrinho</a> | <a href="admin.html">Sair</a> | <button id="bot_login" onclick="login()">Entrar</button>
             <p>
             	Meu Carrinho: <strong>3 items</strong> ( <a href="shoppingcart.html">Mostrar</a> )
 			</p>
@@ -136,13 +136,12 @@ ddsmoothmenu.init({
                     <div class="login-container">
                         <h2>Acesse sua conta</h2>
                         <form>
-                            <label for="username">Usuário:</label>
-                            <input type="text" id="username" name="username" required>
+                            <label for="usuario">Usuário:</label>
+                            <input type="text" id="usuario" name="username" required>
+                            <label for="senha">Senha:</label>
+                            <input type="password" id="senha" name="password" required>
                 
-                            <label for="password">Senha:</label>
-                            <input type="password" id="password" name="password" required>
-                
-                            <button onclick="acesso()">Entrar</button>
+                            <button type="button" id="bot_login2" onclick="acesso()">Entrar</button>
                         </form>
                     </div>
                 </div>
@@ -244,6 +243,13 @@ ddsmoothmenu.init({
     
 </div> 
 </div> 
+<script>
+    document.getElementById('senha').addEventListener('keydown', function (event) {
+        if (event.key === 'Enter') {
+            acesso();
+        }
+    });
+    </script>
 </body>
 
 </html>

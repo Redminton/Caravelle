@@ -14,9 +14,10 @@ function login(){
 
 //função de acesso de admin
 function acesso(){
-    var x = document.getE/lementById('username').value;
-    var y = document.getElementById('password').value;
+    var x = document.getElementById('usuario').value;
+    var y = document.getElementById('senha').value;
     if (x=== login_admin && y=== senha_admin){
+        console.log(   'acessando admin');
         window.location.href = 'admin.html';
     }
     else{
