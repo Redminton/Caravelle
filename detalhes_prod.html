@@ -11,7 +11,7 @@
 <link rel="stylesheet" type="text/css" href="css/ddsmoothmenu.css" />
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/ddsmoothmenu.js"></script>
-    <script type="text/javascript" src="login.js"></script>
+    
 
 <script type="text/javascript">
 
@@ -82,21 +82,21 @@ ddsmoothmenu.init({
             	<h3>Principais destinos</h3>   
                 <div class="content"> 
                 	<ul class="sidebar_list">
-                    	<li class="first"><a href="#">Salvador</a></li>
-                        <li><a href="#">Fortaleza</a></li>
-                        <li><a href="#">São paulo</a></li>
-                        <li><a href="#">Rio de Janeiro</a></li>
-                        <li><a href="#">Manaus</a></li>
-                        <li><a href="#">Recife</a></li>
-                        <li><a href="#">Florianopólis</a></li>
-                        <li><a href="#">Paris</a></li>
-                        <li><a href="#">Bali</a></li>
-                        <li><a href="#">Dubai</a></li>
-                        <li><a href="#">Frankfurt</a></li>
-                        <li><a href="#">Londres</a></li>
-                        <li><a href="#">Nova Iorque</a></li>
-                        <li><a href="#">Los Angeles</a></li>
-                        <li class="last"><a href="#">Tóquio</a></li>
+                    	<li class="first"><a href="detalhes_prod.html">Salvador</a></li>
+                        <li><a href="detalhes_prod.html">Fortaleza</a></li>
+                        <li><a href="detalhes_prod.html">São paulo</a></li>
+                        <li><a href="detalhes_prod.html">Rio de Janeiro</a></li>
+                        <li><a href="detalhes_prod.html">Manaus</a></li>
+                        <li><a href="detalhes_prod.html">Recife</a></li>
+                        <li><a href="detalhes_prod.html">Florianopólis</a></li>
+                        <li><a href="detalhes_prod.html">Paris</a></li>
+                        <li><a href="detalhes_prod.html">Bali</a></li>
+                        <li><a href="detalhes_prod.html">Dubai</a></li>
+                        <li><a href="detalhes_prod.html">Frankfurt</a></li>
+                        <li><a href="detalhes_prod.html">Londres</a></li>
+                        <li><a href="detalhes_prod.html">Nova Iorque</a></li>
+                        <li><a href="detalhes_prod.html">Los Angeles</a></li>
+                        <li class="last"><a href="detalhes_prod.html">Tóquio</a></li>
                     </ul>
                 </div>
             </div>
@@ -104,33 +104,32 @@ ddsmoothmenu.init({
             	<h3>Top Semanal</h3>   
                 <div class="content"> 
                 	<div class="bs_box">
-                    	<a href="#"><img src="images/paris.png" alt="image" /></a>
-                        <h4><a href="#">Paris</a></h4>
-                        <p class="price">$100</p>
+                    	<a href="detalhes_prod.html"><img src="images/paris.png" alt="image" /></a>
+                        <h4><a href="detalhes_prod.html">Paris</a></h4>
+                        <p class="price">$8-500 a day</p>
                         <div class="cleaner"></div>
                     </div>
                     <div class="bs_box">
-                    	<a href="#"><img src="images/cancun.png" alt="image" /></a>
-                        <h4><a href="#">Cancún</a></h4>
-                        <p class="price">$120</p>
+                    	<a href="detalhes_prod.html"><img src="images/cancun.png" alt="image" /></a>
+                        <h4><a href="detalhes_prod.html">Cancún</a></h4>
+                        <p class="price">$8-250 a day</p>
                         <div class="cleaner"></div>
                     </div>
                     <div class="bs_box">
-                    	<a href="#"><img src="images/roma.png" alt="image" /></a>
-                        <h4><a href="#">Roma</a></h4>
-                        <p class="price">$200</p>
+                    	<a href="detalhes_prod.html"><img src="images/roma.png" alt="image" /></a>
+                        <h4><a href="detalhes_prod.html">Roma</a></h4>
+                        <p class="price">$8-400 a day</p>
                         <div class="cleaner"></div>
                     </div>
                     <div class="bs_box">
-                    	<a href="#"><img src="images/seoul.png" alt="image" /></a>
-                        <h4><a href="#">Seoul</a></h4>
-                        <p class="price">$80</p>
+                    	<a href="detalhes_prod.html"><img src="images/seoul.png" alt="image" /></a>
+                        <h4><a href="detalhes_prod.html">Seoul</a></h4>
+                        <p class="price">$8-350 a day</p>
                         <div class="cleaner"></div>
                     </div>
                 </div>
             </div>
         </div>
-
 
 
 
@@ -192,7 +191,8 @@ ddsmoothmenu.init({
                     <tr>
                     	<td>Quantidade de dias:</td>
                         <td>
-                            <input  id="dias" type="number" value="1" style="width: 50px; text-align: right" />
+                            <input  id="dias" type="number" value="1" min="1" style="width: 50px; text-align: right" />
+                            <button type="button" id="bot_dias" onclick="coletarDias()">OK</button> 
                         </td>
                     </tr>
                 </table>
@@ -297,6 +297,7 @@ ddsmoothmenu.init({
         }
     });
     </script>
+    <script type="text/javascript" src="login.js"></script>
 </body>
 
 </html>

@@ -11,7 +11,7 @@ to do:
 -API
 -página de cada cidade
 -terminar primeira página
--calculadora de preço
+-calculadora de preço ? salvar usando   URL ou LocalStorage
 
 
 

@@ -1,6 +1,16 @@
-// logins:
+// Variáveis globais:
     var login_admin = 'admin';
     var senha_admin = 'admin';
+    var dias2;
+    var diasElement;
+    var dias;
+    //console.log("cookies", document.cookies);
+
+
+    document.addEventListener("DOMContentLoaded", function() {
+        
+    });
+
 
 // função de mostrar a página de login
 function login(){
@@ -11,16 +21,45 @@ function login(){
         elemento.style.display = 'none';
     } 
 }
-
+function coletarDias() {
+   // return new Promise((resolve, reject) => {
+        var dias = document.getElementById('dias').value;
+        localStorage.setItem('iddias', dias);
+        dias2 = localStorage.getItem('iddias');
+        //document.cookie = `iddias=${dias}; path=/;`;
+        //var dias2 = obterDias();
+        console.log(dias2);
+       // resolve(dias2);
+    //});
+}
+/* function obterDias() {
+    var cookies = document.cookie.split(';');
+    for (var i = 0; i < cookies.length; i++) {
+        var cookie = cookies[i].trim();
+        if (cookie.startsWith('iddias=')) {
+            return cookie.substring('iddias='.length);
+        }
+    }
+    return null;
+} */
 //função de acesso de admin
-function acesso(){
+/*async*/ function acesso() {
     var x = document.getElementById('usuario').value;
     var y = document.getElementById('senha').value;
-    if (x=== login_admin && y=== senha_admin){
-        console.log(   'acessando admin');
-        window.location.href = 'admin.html';
-    }
-    else{
-        alert('Usuário ou senha incorretos. Tente novamente.');
-    }
+   // try {
+     //   await coletarDias(); // Espera pela conclusão da função coletarDias()
+        if (x === login_admin && y === senha_admin) {
+            console.log('Acessando admin');
+            window.location.href = 'admin.html';
+        } else {
+            alert('Usuário ou senha incorretos. Tente novamente.');
+            dias2= localStorage.getItem('iddias');
+            console.log(dias2);
+             //console.log(obterDias());
+            //console.log(document.cookie);
+        }
+   // } catch (error) {
+   //     console.error('Erro ao coletar dias:', error);
+ //   }
 }
+
