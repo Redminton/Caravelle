@@ -4,7 +4,7 @@
     var dias2;
     var diasElement;
     var dias;
-    var preco;
+    var preco, precoCuri = 0;
     //console.log("cookies", document.cookies);
 
 
@@ -37,9 +37,8 @@ function coletarDias() {
         console.log("preço", preco);
         var  preco_card = document.getElementById("preco_card");
         preco_card.innerHTML = '$ ' + preco;
-
-
 }
+
 
 
 /* function obterDias() {
@@ -72,6 +71,17 @@ function coletarDias() {
    //     console.error('Erro ao coletar dias:', error);
  //   }
 }
+
+
+
+
+
+
+
+
+
+
+
 
 function carregamento(){
     console.log('Carregou');
