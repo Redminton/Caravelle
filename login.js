@@ -4,11 +4,12 @@
     var dias2;
     var diasElement;
     var dias;
+    var preco;
     //console.log("cookies", document.cookies);
 
 
     document.addEventListener("DOMContentLoaded", function() {
-        
+        carregamento();
     });
 
 
@@ -31,7 +32,12 @@ function coletarDias() {
         console.log(dias2);
        // resolve(dias2);
     //});
+        var categoria = document.getElementById('opcoes').value
+
+
 }
+
+
 /* function obterDias() {
     var cookies = document.cookie.split(';');
     for (var i = 0; i < cookies.length; i++) {
@@ -63,3 +69,7 @@ function coletarDias() {
  //   }
 }
 
+function carregamento(){
+    console.log('Carregou');
+
+}
