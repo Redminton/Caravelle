@@ -1,4 +1,12 @@
-var x = 3;
+var x = 3; // quantidade de itens no carrinho;
+
+carrinhoDisplay();
+
+function carrinhoDisplay(){
+    var carrinhoDisplay = document.getElementById('carrinhoDisplay');
+    carrinhoDisplay.innerHTML = x + ' itens';
+    console.log('carrinho ', x);
+}
 
 
 // calcula com base na cidade
@@ -49,6 +57,7 @@ function calcular_tudo() {
 function remover_tabela(){
     var tabela = document.getElementById('tabelaC');
     x -= 1;
+    carrinhoDisplay();
     console.log('x ', x );
     if(x < 1){
         tabela.style.display = "none";

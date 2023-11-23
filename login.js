@@ -38,7 +38,7 @@ function coletarDias() {
         var  preco_card = document.getElementById("preco_card");
         preco_card.innerHTML = '$ ' + preco;
 }
-
+setInterval(coletarDias, 500);
 /* function obterDias() {
     var cookies = document.cookie.split(';');
     for (var i = 0; i < cookies.length; i++) {

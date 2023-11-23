@@ -1,4 +1,4 @@
--Calculadora de preço de estadia e classe do hotel
+
 -Diferentes tipos de quarto (classes)
 -login admin para mudar a cotação do dólar (futuramente API?)
 -Cartões vale hotel (com prazo de validade, 6 meses)
@@ -7,6 +7,8 @@
 
 
 to do:
+- botar um valor diferentepara cada cidade
+-página para imprimir cartão
 -admin - função de mudar a cotação do dolar
 -API
 -página de cada cidade
