@@ -7,11 +7,11 @@
 
 
 to do:
--admin
+-admin - função de mudar a cotação do dolar
 -API
 -página de cada cidade
--terminar primeira página
--calculadora de preço ? salvar usando   URL ou LocalStorage
+
+-calculadora de preço ? salvar usando  LocalStorage
 
 
 

@@ -21,7 +21,7 @@ function login(){
     } else {
         elemento.style.display = 'none';
     } 
-}
+} 
 function coletarDias() {
    // return new Promise((resolve, reject) => {
         var dias = document.getElementById('dias').value;
