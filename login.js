@@ -32,7 +32,7 @@ function coletarDias() {
         console.log(dias2);
        // resolve(dias2);
     //});
-        var categoria = document.getEl ementById('opcoes').value;
+        var categoria = document.getElementById('opcoes').value;
         preco = categoria * dias;
         console.log("preço", preco);
         var  preco_card = document.getElementById("preco_card");
