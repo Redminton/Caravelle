@@ -1,4 +1,4 @@
-
+var x = 3;
 
 
 // calcula com base na cidade
@@ -25,6 +25,7 @@ function calcularPreco(cidadeId, diasId, opcoesId, displayId) {
 // Função para remover uma cidade
 function removerCidade(cidadeId) {
     var preco = 0;
+    remover_tabela();
     var cidadeElement = document.getElementById(cidadeId);
     if (cidadeElement) {
         cidadeElement.style.display = "none";
@@ -36,12 +37,21 @@ function removerCidade(cidadeId) {
 
 // Função para calcular o preço total
 function calcular_tudo() {
-    var precoCuri = calcularPreco('curitibaC', 'diasCuri', 'opcoesCuri', 'display_precoCuri');
-   // var precoOutraCidade = calcularPreco('outraCidade', 'diasOutraCidade', 'opcoesOutraCidade', 'display_precoOutraCidade');
+    var precoNap = calcularPreco('napC', 'diasNap', 'opcoesNap', 'display_precoNap');
+    var precoMum = calcularPreco('mumC', 'diasMum', 'opcoesMum', 'display_precoMum');
+    var precoMel = calcularPreco('melC', 'diasMel', 'opcoesMel', 'display_precoMel');
     // Calcular o preço total somando os preços individuais
-    var precoTotal = precoCuri;// + precoOutraCidade;
+    var precoTotal = precoNap + precoMum + precoMel;
 
     var displayTot = document.getElementById('displayTot');
     displayTot.innerHTML = '$' + precoTotal;
+}
+function remover_tabela(){
+    var tabela = document.getElementById('tabelaC');
+    x -= 1;
+    console.log('x ', x );
+    if(x < 1){
+        tabela.style.display = "none";
+    }
 }
 setInterval(calcular_tudo, 500);
