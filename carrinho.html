@@ -11,7 +11,7 @@
 <link rel="stylesheet" type="text/css" href="css/ddsmoothmenu.css" />
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/ddsmoothmenu.js"></script>
-
+    
 
 <script type="text/javascript">
 
@@ -31,13 +31,12 @@ ddsmoothmenu.init({
 
 	<div id="templatemo_header">
        
-    	<div id="site_title"><h1><a href="index.html">Caravelle</a></h1></div>
+    	<div id="site_title"><h1><a href="#">Caravelle</a></h1></div>
         <div id="header_right">
         	<p>
-	        <a href="#">Minha conta</a> | <a href="#">Lista de desejos</a> | <a href="carrinho.html">Carrinho</a> 
-            | <a href="admin.html">Sair</a> | <button id="bot_login" onclick="login()">Entrar</button>
+	        <a href="#">Minha conta</a> | <a href="#">Lista de desejos</a> | <a href="#">Carrinho</a> | <a href="admin.html">Sair</a> | <button id="bot_login" onclick="login()">Entrar</button>
             <p>
-            	Meu Carrinho: <strong>3 items</strong> ( <a href="carrinho.html">Mostrar</a> )
+            	Meu Carrinho: <strong>3 items</strong> ( <a href="shoppingcart.html">Mostrar</a> )
 			</p>
 		</div>
         <div class="cleaner"></div>
@@ -131,6 +130,12 @@ ddsmoothmenu.init({
                 </div>
             </div>
         </div>
+
+
+
+
+
+
         <div>
             <div id="content" class="float_r">
                 <div id="login">  
@@ -148,99 +153,155 @@ ddsmoothmenu.init({
                 </div>
                 <br>
         </div>
-        </div>
+        </div> 
 
         <div id="content" class="float_r">
-        	<div id="slider-wrapper">
-                <div id="slider" class="nivoSlider">
-                    <a href="detalhes_prod.html"><img src="images/slider/003.webp" alt="" title="Hell of January!" /></a>
-                    <a href="detalhes_prod.html"><img src="images/slider/001.jpg" alt="" title="Découvrez Paris!" /></a>
-                    <a href="detalhes_prod.html"><img src="images/slider/002.jpg" alt="" title="Aventure-se em Salvador" /></a>
-                    <a herf="detalhes_prod.html"><img src="images/slider/004.webp" alt="" title="#htmlcaption" /></a>
-                </div>
-                <div id="htmlcaption" class="nivo-html-caption">
-                    <strong>Conheça Tóquio</strong>  <a href="#">(#Easter Egg)</a>.
-                </div>
+        	<h1>Salvador</h1><div class="pais">BRAZIL</div>
+            <div class="content_half float_l">
+        	<a  rel="lightbox[portfolio]" href="images/product/salvador1.jpeg"><img src="images/product/salvador2.jpeg" alt="image" /></a>
             </div>
-            <script type="text/javascript" src="js/jquery-1.4.3.min.js"></script>
-            <script type="text/javascript" src="js/jquery.nivo.slider.pack.js"></script>
-            <script type="text/javascript">
-              $(window).load(function() {
-                $('#slider').nivoSlider();
-            });
-            </script>
-        	<h1>Novos Destinos</h1>
-            <div class="product_box">
-	            <h3>Curitiba</h3>
-            	<a href="detalhes_prod.html"><img src="images/product/001.jpg" alt="dest1" /></a>
-                <p>
-                    "Curitiba: Onde a modernidade abraça a natureza com charme e eficiência."
-                </p>
-                <p class="product_price">$ 100 a day</p>
-                <a href="carrinho.html" class="addtocart"></a>
-                <a href="detalhes_prod.html" class="detail"></a>
-            </div>        	
-            <div class="product_box">
-            	<h3>Marrakesh</h3>
-            	<a href="detalhes_prod.html"><img src="images/product/002.jpg" alt="dest2" /></a>
-                <p>
-                    "Marrakesh: Um caleidoscópio cultural no coração do Marrocos."
-                </p>
-              <p class="product_price">$ 80 a day</p>
-                <a href="carrinho.html" class="addtocart"></a>
-                <a href="detalhes_prod.html" class="detail"></a>
-            </div>        	
-            <div class="product_box no_margin_right">
-            	<h3>Luxor</h3>
-            	<a href="detalhes_prod.html"><img src="images/product/003.jpg" alt="dest3" /></a>
-                <p>
-                    "Luxor: O esplendor eterno às margens do Nilo."
-                </p>
-              <p class="product_price">$ 60 a day</p>
-                <a href="carrinho.html" class="addtocart"></a>
-                <a href="detalhes_prod.html" class="detail"></a>
-            </div>   
+            <div class="content_half float_r">
+                <table>
+                    <tr>
+                        <td width="160">Preço:</td>
+                        <td>$8-200 a day</td>
+                    </tr>
+                    <tr>
+                        <td>Disponível:</td>
+                        <td>Sim</td>
+                    </tr>
+                    <tr>
+                        <td>Classes:</td>
+                        <td>
+                            <select id="opcoes" name="opcao">
+                                <option value="100">A $ 100</option>
+                                <option value="50">B $ 50</option>
+                                <option value="20">C $ 20</option>
+                                <option value="200">S $ 200</option>
+                                <option value="8">LL $ 8</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td>Endereço:</td>
+                        <td>Av. Oceânica, 235 - Barra, Salvador - BA, 40140-130</td>
+                    </tr>
+                    
+                    <tr>
+                    	<td>Quantidade de dias:</td>
+                        <td>
+                            <input  id="dias" type="number" value="1" min="1" style="width: 50px; text-align: right" />
+                            <button type="button" id="bot_dias" onclick="coletarDias()">OK</button> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Preço do Cartão: <br><p id="preco_card"></p></td>
+                       
+                    </tr>
+                </table>
+                <div class="cleaner h20"></div>
+
+                <a href="shoppingcart.html" class="addtocart"></a>
+
+			</div>
+            <div class="cleaner h30"></div>
             
-            <div class="cleaner"></div>
-                 	
-<div class="product_box">
-            	<h3>Melbourne</h3>
-           	<a href="detalhes_prod.html"><img src="images/product/004.jpg" alt="dest4" /></a>
-            <p>
-                "Melbourne: Uma fusão vibrante de arte, café e vida urbana à beira da baía."
-            </p>
-      <p class="product_price">$ 220 a day</p>
-                <a href="carrinho.html" class="addtocart"></a>
-                <a href="detalhes_prod.html" class="detail"></a>
+            <h5><strong>Descrição da Cidade</strong></h5>
+            <p>Salvador, localizada na região nordeste do Brasil, é uma cidade vibrante e cheia de história, 
+                cultura e belezas naturais. Conhecida como a "Capital da Alegria" 
+                devido à sua animada cultura e festivais, Salvador é uma das cidades mais antigas do país, 
+                com uma rica herança afro-brasileira e influências culturais que permeiam sua arquitetura, 
+                culinária e tradições. <br><br>
+                <strong>Centro Histórico:</strong>
+                   Salvador abriga um dos centros históricos mais bem preservados das Américas, 
+                   o Pelourinho. Suas ruas de paralelepípedos, casarões coloridos e igrejas barrocas 
+                   impressionam os visitantes. A Igreja do Bonfim, o Elevador Lacerda e a Praça da Sé 
+                   são pontos imperdíveis.
+                   <br>
+                <strong>Cultura Afro-Brasileira:</strong>
+                   A influência africana é evidente na música, dança e religião de Salvador. 
+                   O Olodum, grupo percussivo local, é famoso mundialmente, e o candomblé, 
+                   uma religião afro-brasileira, é praticado em muitos terreiros pela cidade.
+                   <br>
+                <strong>Praias Deslumbrantes:</strong>
+                   Salvador é abençoada com belas praias ao longo da sua costa. 
+                   Praia do Farol da Barra, Porto da Barra e Itapuã são algumas das praias mais populares, 
+                   oferecendo águas azuis, areias douradas e uma atmosfera descontraída.
+                   <br>
+                <strong>Gastronomia Baiana:</strong>
+                   A culinária baiana é uma explosão de sabores. Acarajé, moqueca, vatapá e o 
+                   abará são pratos típicos que você deve experimentar. Os mercados locais, 
+                   como o Mercado Modelo, são ótimos lugares para provar essas delícias.
+                   <br>
+                <strong>Festivais e Carnaval:</strong>
+                   Salvador é famosa por seus festivais e, especialmente, pelo Carnaval, 
+                   considerado um dos maiores e mais animados do mundo. Durante essa época, 
+                   as ruas são tomadas por multidões dançando ao som de trios elétricos e bandas locais.
+                   <br>
+                <strong>Artesanato e Mercados:</strong>
+                   Os mercados locais, como o Mercado Modelo e o São Joaquim, 
+                   são ótimos para comprar artesanato, lembranças e experimentar a 
+                   autenticidade da cultura local.
+                   <br>
+                <strong>Natureza Exuberante:</strong>
+                   Além das praias, Salvador possui áreas verdes encantadoras, 
+                   como o Parque Metropolitano de Pituaçu, que oferece trilhas ecológicas e 
+                   uma vista panorâmica da cidade.
+                   <br><br>
+                Em resumo, Salvador é uma cidade que encanta pelos contrastes, 
+                pela riqueza cultural e pelas experiências únicas que oferece aos visitantes. 
+                Seja explorando seu passado histórico ou desfrutando das belezas naturais, 
+                a capital baiana é um destino fascinante.
+                <br>
+            </p>	
+            
+          <div class="cleaner h50"></div>
+
+
+       
+            
+
+
+
+
+
+
+
+
+
+
+
+
+            <h3>Mais Destinos</h3>
+        	<div class="product_box">
+            	<a href="productdetail.html"><img src="images/product/001.jpg" alt="" /></a>
+                <h3>Curitiba</h3>
+                <p class="product_price">$ 100</p>
+                <a href="shoppingcart.html" class="addtocart"></a>
+                <a href="productdetail.html" class="detail"></a>
             </div>        	
             <div class="product_box">
-	            <h3>Napóles</h3>
-            	<a href="detalhes_prod.html"><img src="images/product/005.jpg" alt="dest5" /></a>
-                <p>
-                    "Nápoles: Onde a história se mistura com a paixão, à sombra do Vesúvio."
-                </p>
-              <p class="product_price">$ 180 a day</p>
-                <a href="carrinho.html" class="addtocart"></a>
-                <a href="detalhes_prod.html" class="detail"></a>
+            	<a href="productdetail.html"><img src="images/product/002.jpg" alt="" /></a>
+                <h3>Marrakesh</h3>
+                <p class="product_price">$ 200</p>
+                <a href="shoppingcart.html" class="addtocart"></a>
+                <a href="productdetail.html" class="detail"></a>
             </div>        	
             <div class="product_box no_margin_right">
-            	<h3>Mumbai</h3>
-            	<a href="detalhes_prod.html"><img src="images/product/006.jpg" alt="dest6" /></a>
-                <p>
-                    "Mumbai: Lugar onde a tradição indiana encontra a modernidade."
-                </p>
-                <p class="product_price">$ 160 a day</p>
-                <a href="carrinho.html" class="addtocart"></a>
-                <a href="detalhes_prod.html" class="detail"></a>
-            </div>        	
+            	<a href="productdetail.html"><img src="images/product/003.jpg" alt="" /></a>
+                <h3>Luxor</h3>
+                <p class="product_price">$ 120</p>
+                <a href="shoppingcart.html" class="addtocart"></a>
+                <a href="productdetail.html" class="detail"></a>
+            </div>     
         </div> 
         <div class="cleaner"></div>
-    </div>
+    </div> 
     
     <div id="templatemo_footer">
     	<p><a href="#">início</a> | <a href="#">Produtos</a> | <a href="#">Sobre</a> | <a href="#">FAQs</a> | <a href="#">Pagamento</a> | <a href="#">Contato</a>
 		</p>
     	Copyright © 1500 <a href="#">Caravelle LTDA</a></div> 
+    
 </div> 
 </div> 
 <script>
