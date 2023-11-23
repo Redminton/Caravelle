@@ -298,7 +298,13 @@ h6 { font-size: 12px; margin: 0 0 5px; padding: 0; }
 		border-radius: 4px;
 		cursor: pointer;
 	}
-
+#preco_card{
+	margin-left: 20%;
+	font-size: larger;
+}
+.pais{
+	font-size: smaller;
+}
 
 
 
