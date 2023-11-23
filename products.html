@@ -9,8 +9,8 @@
 <link rel="stylesheet" href="nivo-slider.css" type="text/css" media="screen" />
 <link rel="stylesheet" type="text/css" href="css/ddsmoothmenu.css" />
 <script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/ddsmoothmenu.js">
-</script>
+<script type="text/javascript" src="js/ddsmoothmenu.js"></script>
+
 
 <script type="text/javascript">
 
@@ -25,36 +25,39 @@ ddsmoothmenu.init({
 </head>
 
 <body>
-
 <div id="templatemo_body_wrapper">
 <div id="templatemo_wrapper">
 
 	<div id="templatemo_header">
-    	<div id="site_title"><h1><a href="#">Online Shoes Store</a></h1></div>
+       
+    	<div id="site_title"><h1><a href="index.html">Caravelle</a></h1></div>
         <div id="header_right">
         	<p>
-	        <a href="#">My Account</a> | <a href="#">My Wishlist</a> | <a href="#">My Cart</a> | <a href="#">Checkout</a> | <a href="#">Log In</a></p>
+	        <a href="#">Minha conta</a> | <a href="#">Lista de desejos</a> | <a href="carrinho.html">Carrinho</a> 
+            | <a href="admin.html">Sair</a> | <button id="bot_login" onclick="login()">Entrar</button>
             <p>
-            	Shopping Cart: <strong>3 items</strong> ( <a href="shoppingcart.html">Show Cart</a> )
+            	Meu Carrinho: <strong><span id="carrinhoDisplay">3 itens</span></strong> 
+                ( <a href="carrinho.html">Mostrar</a> )
 			</p>
 		</div>
         <div class="cleaner"></div>
-    </div> <!-- END of templatemo_header -->
-    
+    </div> 
     <div id="templatemo_menubar">
     	<div id="top_nav" class="ddsmoothmenu">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="products.html" class="selected">Products</a>
+                <li><a href="index.html" class="selected">Home</a></li>
+                <li><a href="products.html">Produtos</a>
                     <ul>
-                        <li><a href="#submenu1">Sub menu 1</a></li>
-                        <li><a href="#submenu2">Sub menu 2</a></li>
-                        <li><a href="#submenu3">Sub menu 3</a></li>
-                        <li><a href="#submenu4">Sub menu 4</a></li>
-                        <li><a href="#submenu5">Sub menu 5</a></li>
+                        <li><a href="#submenu1">Cidades no Brasl</a></li>
+                        <li><a href="#submenu2">Europa</a></li>
+                        <li><a href="#submenu3">Ásia</a></li>
+                        <li><a href="#submenu4">Africa</a></li>
+                        <li><a href="#submenu5">Praias</a></li>
+                        <li><a href="#submenu5">Américas</a></li>
+                        <li><a href="#submenu5">Oceania</a></li>
                   </ul>
                 </li>
-                <li><a href="about.html">About</a>
+                <li><a href="about.html">Sobre</a>
                     <ul>
                         <li><a href="#submenu1">Sub menu 1</a></li>
                         <li><a href="#submenu2">Sub menu 2</a></li>
@@ -62,167 +65,240 @@ ddsmoothmenu.init({
                   </ul>
                 </li>
                 <li><a href="faqs.html">FAQs</a></li>
-                <li><a href="checkout.html">Checkout</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="checkout.html">Pagamento</a></li>
+                <li><a href="contact.html">Contato</a></li>
             </ul>
             <br style="clear: left" />
-        </div> <!-- end of ddsmoothmenu -->
+        </div> 
         <div id="templatemo_search">
             <form action="#" method="get">
               <input type="text" value=" " name="keyword" id="keyword" title="keyword" onfocus="clearText(this)" onblur="clearText(this)" class="txt_field" />
               <input type="submit" name="Search" value=" " alt="Search" id="searchbutton" title="Search" class="sub_btn"  />
             </form>
         </div>
-    </div> <!-- END of templatemo_menubar -->
+    </div> 
     
     <div id="templatemo_main">
     	<div id="sidebar" class="float_l">
         	<div class="sidebar_box"><span class="bottom"></span>
-            	<h3>Categories</h3>   
+            	<h3>Principais destinos</h3>   
                 <div class="content"> 
                 	<ul class="sidebar_list">
-                    	<li class="first"><a href="#">Sed eget purus</a></li>
-                        <li><a href="#">Vestibulum eleifend</a></li>
-                        <li><a href="#">Nulla odio ipsum</a></li>
-                        <li><a href="#">Suspendisse posuere</a></li>
-                        <li><a href="#">Nunc a dui sed</a></li>
-                        <li><a href="#">Curabitur ac mauris</a></li>
-                        <li><a href="#">Mauris nulla tortor</a></li>
-                        <li><a href="#">Nullam ultrices</a></li>
-                        <li><a href="#">Nulla odio ipsum</a></li>
-                        <li><a href="#">Suspendisse posuere</a></li>
-                        <li><a href="#">Nunc a dui sed</a></li>
-                        <li><a href="#">Curabitur ac mauris</a></li>
-                        <li><a href="#">Mauris nulla tortor</a></li>
-                        <li><a href="#">Nullam ultrices</a></li>
-                        <li class="last"><a href="#">Sed eget purus</a></li>
+                    	<li class="first"><a href="detalhes_prod.html">Salvador</a></li>
+                        <li><a href="detalhes_prod.html">Fortaleza</a></li>
+                        <li><a href="detalhes_prod.html">São paulo</a></li>
+                        <li><a href="detalhes_prod.html">Rio de Janeiro</a></li>
+                        <li><a href="detalhes_prod.html">Manaus</a></li>
+                        <li><a href="detalhes_prod.html">Recife</a></li>
+                        <li><a href="detalhes_prod.html">Florianopólis</a></li>
+                        <li><a href="detalhes_prod.html">Paris</a></li>
+                        <li><a href="detalhes_prod.html">Bali</a></li>
+                        <li><a href="detalhes_prod.html">Dubai</a></li>
+                        <li><a href="detalhes_prod.html">Frankfurt</a></li>
+                        <li><a href="detalhes_prod.html">Londres</a></li>
+                        <li><a href="detalhes_prod.html">Nova Iorque</a></li>
+                        <li><a href="detalhes_prod.html">Los Angeles</a></li>
+                        <li class="last"><a href="detalhes_prod.html">Tóquio</a></li>
                     </ul>
                 </div>
             </div>
             <div class="sidebar_box"><span class="bottom"></span>
-            	<h3>Bestsellers </h3>   
+            	<h3>Top Semanal</h3>   
                 <div class="content"> 
                 	<div class="bs_box">
-                    	<a href="#"><img src="images/templatemo_image_01.jpg" alt="image" /></a>
-                        <h4><a href="#">Donec nunc nisl</a></h4>
-                        <p class="price">$10</p>
+                    	<a href="detalhes_prod.html"><img src="images/paris.png" alt="image" /></a>
+                        <h4><a href="detalhes_prod.html">Paris</a></h4>
+                        <p class="price">$8-500 a day</p>
                         <div class="cleaner"></div>
                     </div>
                     <div class="bs_box">
-                    	<a href="#"><img src="images/templatemo_image_01.jpg" alt="image" /></a>
-                        <h4><a href="#">Lorem ipsum dolor sit</a></h4>
-                        <p class="price">$12</p>
+                    	<a href="detalhes_prod.html"><img src="images/cancun.png" alt="image" /></a>
+                        <h4><a href="detalhes_prod.html">Cancún</a></h4>
+                        <p class="price">$8-250 a day</p>
                         <div class="cleaner"></div>
                     </div>
                     <div class="bs_box">
-                    	<a href="#"><img src="images/templatemo_image_01.jpg" alt="image" /></a>
-                        <h4><a href="#">Phasellus ut dui</a></h4>
-                        <p class="price">$20</p>
+                    	<a href="detalhes_prod.html"><img src="images/roma.png" alt="image" /></a>
+                        <h4><a href="detalhes_prod.html">Roma</a></h4>
+                        <p class="price">$8-400 a day</p>
                         <div class="cleaner"></div>
                     </div>
                     <div class="bs_box">
-                    	<a href="#"><img src="images/templatemo_image_01.jpg" alt="image" /></a>
-                        <h4><a href="#">Vestibulum ante</a></h4>
-                        <p class="price">$8</p>
+                    	<a href="detalhes_prod.html"><img src="images/seoul.png" alt="image" /></a>
+                        <h4><a href="detalhes_prod.html">Seoul</a></h4>
+                        <p class="price">$8-350 a day</p>
                         <div class="cleaner"></div>
                     </div>
                 </div>
             </div>
         </div>
+        <div>
+            <div id="content" class="float_r">
+                <div id="login">  
+                    <div class="login-container">
+                        <h2>Acesse sua conta</h2>
+                        <form>
+                            <label for="usuario">Usuário:</label>
+                            <input type="text" id="usuario" name="username" required>
+                            <label for="senha">Senha:</label>
+                            <input type="password" id="senha" name="password" required>
+                
+                            <button type="button" id="bot_login2" onclick="acesso()">Entrar</button>
+                        </form>
+                    </div>
+                </div>
+                <br>
+        </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
         <div id="content" class="float_r">
-        	<h1> Products</h1>
+        	<h1> Locais Disponíveis</h1>
             <div class="product_box">
-	            <h3>Ut eu feugiat</h3>
-            	<a href="productdetail.html"><img src="images/product/01.jpg" alt="Shoes 1" /></a>
-                <p> Fusce in dui et neque malesuada tincidunt nec at urna. Validate <a href="http://validator.w3.org/check?uri=referer" rel="nofollow">XHTML</a> &amp; <a href="http://jigsaw.w3.org/css-validator/check/referer" rel="nofollow">CSS</a>.</p>
-              <p class="product_price">$ 100</p>
-                <a href="shoppingcart.html" class="addtocart"></a>
-                <a href="productdetail.html" class="detail"></a>
+	            <h3>Salvador</h3>
+            	<a href="detalhes_prod.html"><img src="images/product/001.jpg" alt="Shoes 1" /></a>
+                <p> "Salvador: Onde a alegria encontra o sol na dança das cores e ritmos na Baía de Todos os Santos."
+                    </p>
+              <p class="product_price">$ 8 a 200 a day</p>
+                <a href="carrinho.html" class="addtocart"></a>
+                <a href="detalhes_prod.html" class="detail"></a>
             </div>        	
             <div class="product_box">
-            	<h3>Curabitur et turpis</h3>
-            	<a href="productdetail.html"><img src="images/product/02.jpg" alt="Shoes 2" /></a>
-                <p>Etiam et sapien ut nunc blandit euismod. Sed dui libero, semper a volutpat sed, placerat eu lectus.</p>
+            	<h3>Rio de Janeiro</h3>
+            	<a href="detalhes_prod.html"><img src="images/product/02.jpg" alt="Shoes 2" /></a>
+                <p>"Rio de Janeiro: O encanto eterno entre praias douradas e montanhas imponentes."</p>
             <p class="product_price">$ 80</p>
-                <a href="shoppingcart.html" class="addtocart"></a>
-                <a href="productdetail.html" class="detail"></a>
+                <a href="carrinho.html" class="addtocart"></a>
+                <a href="detalhes_prod.html" class="detail"></a>
             </div>        	
             <div class="product_box no_margin_right">
-            	<h3>Mauris consectetur</h3>
-            	<a href="productdetail.html"><img src="images/product/03.jpg" alt="Shoes 3" /></a>
-                <p>Curabitur pellentesque ullamcorper massa ac ultricies. Maecenas porttitor erat quis leo pellentesque.</p>
+            	<h3>Tóquio</h3>
+            	<a href="detalhes_prod.html"><img src="images/product/03.jpg" alt="Shoes 3" /></a>
+                <p>"Tóquio: Um frenesi de modernidade e tradição, onde o futuro se encontra com o passado."</p>
               <p class="product_price">$ 60</p>
-                <a href="shoppingcart.html" class="addtocart"></a>
-                <a href="productdetail.html" class="detail"></a>
+                <a href="carrinho.html" class="addtocart"></a>
+                <a href="detalhes_prod.html" class="detail"></a>
             </div>     
             
             <div class="cleaner"></div>
                	
             <div class="product_box">
-            	<h3>Proin volutpat</h3>
-            	<a href="productdetail.html"><img src="images/product/04.jpg" alt="Shoes 4" /></a>
-                <p>Morbi non risus vitae est vestibulum tincidunt ac eget metus. Sed congue, erat id congue vehicula.</p>
+            	<h3>Paris</h3>
+            	<a href="detalhes_prod.html"><img src="images/product/04.jpg" alt="Shoes 4" /></a>
+                <p>"Paris: O cenário romântico onde a elegância encontra a  história francesa."</p>
               <p class="product_price">$ 260</p>
-                <a href="shoppingcart.html" class="addtocart"></a>
-                <a href="productdetail.html" class="detail"></a>
+                <a href="carrinho.html" class="addtocart"></a>
+                <a href="detalhes_prod.html" class="detail"></a>
             </div>        	
             <div class="product_box">
-	            <h3>Aenean tempus</h3>
-            	<a href="productdetail.html"><img src="images/product/05.jpg" alt="Shoes 5" /></a>
-                <p>Aenean eu elit arcu. Quisque eget blandit erat. Integer molestie malesuada augue vitae mollis.</p>
+	            <h3>Melbourne</h3>
+            	<a href="detalhes_prod.html"><img src="images/product/05.jpg" alt="Shoes 5" /></a>
+                <p>"Melbourne: Uma fusão vibrante de arte, café e vida urbana à beira da baía."</p>
             <p class="product_price">$ 80</p>
-                <a href="shoppingcart.html" class="addtocart"></a>
-                <a href="productdetail.html" class="detail"></a>
+                <a href="carrinho.html" class="addtocart"></a>
+                <a href="detalhes_prod.html" class="detail"></a>
             </div>        	
             <div class="product_box no_margin_right">
-            	<h3>Nulla luctus urna</h3>
-            	<a href="productdetail.html"><img src="images/product/06.jpg" alt="Shoes 6" /></a>
-                <p>Nunc nisl nisi, aliquet eu gravida vitae, porta vel ante. Pellentesque faucibus risus et sem volutpat.</p>
+            	<h3>Mumbai</h3>
+            	<a href="detalhes_prod.html"><img src="images/product/06.jpg" alt="Shoes 6" /></a>
+                <p> "Mumbai: Lugar onde a tradição indiana encontra a modernidade."</p>
               <p class="product_price">$ 190</p>
-                <a href="shoppingcart.html" class="addtocart"></a>
-                <a href="productdetail.html" class="detail"></a>
+                <a href="carrinho.html" class="addtocart"></a>
+                <a href="detalhes_prod.html" class="detail"></a>
             </div>   
             
             <div class="cleaner"></div>
                  	
             <div class="product_box">
-            	<h3>Pellentesque egestas</h3>
-            	<a href="productdetail.html"><img src="images/product/07.jpg" alt="Shoes 7" /></a>
-				<p>Aenean eu elit arcu. Quisque eget blandit erat. Integer molestie malesuada augue vitae mollis.</p>
+            	<h3>Nápoles</h3>
+            	<a href="detalhes_prod.html"><img src="images/product/07.jpg" alt="Shoes 7" /></a>
+				<p> "Nápoles: Onde a história se mistura com a paixão, à sombra do Vesúvio."</p>
               <p class="product_price">$ 30</p>
-                <a href="shoppingcart.html" class="addtocart"></a>
-                <a href="productdetail.html" class="detail"></a>
+                <a href="carrinho.html" class="addtocart"></a>
+                <a href="detalhes_prod.html" class="detail"></a>
             </div>        	
             <div class="product_box">
-            	<h3>Suspendisse porttitor</h3>
-            	<a href="productdetail.html"><img src="images/product/08.jpg" alt="Shoes 8" /></a>
-                <p>Nulla rutrum neque vitae erat condimentum eget malesuada neque molestie. Nunc a leo tellus.</p>
+            	<h3>Marrakesh</h3>
+            	<a href="detalhes_prod.html"><img src="images/product/08.jpg" alt="Shoes 8" /></a>
+                <p>"Marrakesh: Um caleidoscópio cultural no coração do Marrocos."</p>
             <p class="product_price">$ 220</p>
-                <a href="shoppingcart.html" class="addtocart"></a>
-                <a href="productdetail.html" class="detail"></a>
+                <a href="carrinho.html" class="addtocart"></a>
+                <a href="detalhes_prod.html" class="detail"></a>
             </div>        	
             <div class="product_box no_margin_right">
-            	 <h3>Nam vehicula</h3>
-            	<a href="productdetail.html"><img src="images/product/09.jpg" alt="Shoes 9" /></a>
-               	<p>Vivamus accumsan luctus interdum. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            	 <h3>Curitiba</h3>
+            	<a href="detalhes_prod.html"><img src="images/product/09.jpg" alt="Shoes 9" /></a>
+               	<p>"Curitiba: Onde a modernidade abraça a natureza com charme e eficiência."</p>
               <p class="product_price">$ 65</p>
-                <a href="shoppingcart.html" class="addtocart"></a>
-                <a href="productdetail.html" class="detail"></a>
+                <a href="carrinho.html" class="addtocart"></a>
+                <a href="detalhes_prod.html" class="detail"></a>
+            </div>  
+            <div class="cleaner"></div>
+                 	
+            <div class="product_box">
+            	<h3>Luxor</h3>
+            	<a href="detalhes_prod.html"><img src="images/product/07.jpg" alt="Shoes 7" /></a>
+				<p>  "Luxor: O esplendor eterno às margens do Nilo."</p>
+              <p class="product_price">$ 30</p>
+                <a href="carrinho.html" class="addtocart"></a>
+                <a href="detalhes_prod.html" class="detail"></a>
+            </div>        	
+            <div class="product_box">
+            	<h3>Cáncun</h3>
+            	<a href="detalhes_prod.html"><img src="images/product/08.jpg" alt="Shoes 8" /></a>
+                <p>"Cancún: O paraíso tropical onde as águas cristalinas te dão vida "</p>
+            <p class="product_price">$ 220</p>
+                <a href="carrinho.html" class="addtocart"></a>
+                <a href="detalhes_prod.html" class="detail"></a>
+            </div>        	
+            <div class="product_box no_margin_right">
+            	 <h3>Seoul</h3>
+            	<a href="detalhes_prod.html"><img src="images/product/09.jpg" alt="Shoes 9" /></a>
+               	<p>"Seul: A fusão hipnotizante de tradição e tecnologia no coração da Coreia do Sul."</p>
+              <p class="product_price">$ 65</p>
+                <a href="carrinho.html" class="addtocart"></a>
+                <a href="detalhes_prod.html" class="detail"></a>
             </div>  
         </div> 
         <div class="cleaner"></div>
-    </div> <!-- END of templatemo_main -->
+    </div>
     
+
+
+
+
+
+
+
+
+
+
     <div id="templatemo_footer">
-    	<p><a href="#">Home</a> | <a href="#">Products</a> | <a href="#">About</a> | <a href="#">FAQs</a> | <a href="#">Checkout</a> | <a href="#">Contact Us</a>
+    	<p><a href="index.html">início</a> | <a href="#">Produtos</a> | <a href="#">Sobre</a> 
+            | <a href="#">FAQs</a> | <a href="#">Pagamento</a> | <a href="#">Contato</a>
 		</p>
-
-
-    	Copyright © 2072 <a href="#">Your Company Name</a> <!-- Credit: www.templatemo.com -->
-    </div> <!-- END of templatemo_footer -->
-    
-</div> <!-- END of templatemo_wrapper -->
-</div> <!-- END of templatemo_body_wrapper -->
-
+    	Copyright © 1500 <a href="#">Caravelle LTDA</a></div> 
+</div> 
+</div> 
+<script>
+    document.getElementById('senha').addEventListener('keydown', function (event) {
+        if (event.key === 'Enter') {
+            acesso();
+        }
+    });
+    </script>
+    <script type="text/javascript" src="login.js"></script>
+    <script type="text/javascript" src="calculadora.js"></script>
 </body>
+
 </html>

@@ -7,13 +7,18 @@
 
 
 to do:
-- botar um valor diferentepara cada cidade
+- botar um valor diferente para cada cidade
 -página para imprimir cartão
 -admin - função de mudar a cotação do dolar
 -API
 -página de cada cidade
+- filtro dos continentes atraves de um botao
 
 -calculadora de preço ? salvar usando  LocalStorage
+
+-fazer conversão dos valores
+
+
 
 
 
