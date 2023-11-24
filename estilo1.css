@@ -305,8 +305,26 @@ h6 { font-size: 12px; margin: 0 0 5px; padding: 0; }
 .pais{
 	font-size: smaller;
 }
-
-
+.entrada {
+	animation: descendo2 0.5s ease-out;
+	display: none;
+  }
+ 
+  @keyframes descendo2 {
+	from {
+		transform: translateY(-10%);
+		opacity: 0;
+	}
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+#botPix{
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+}
 
 
 

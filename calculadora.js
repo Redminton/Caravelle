@@ -1,11 +1,13 @@
 var x = 3; // quantidade de itens no carrinho;
+var total;
+
 
 carrinhoDisplay();
 
 function carrinhoDisplay(){
     var carrinhoDisplay = document.getElementById('carrinhoDisplay');
     carrinhoDisplay.innerHTML = x + ' itens';
-    console.log('carrinho ', x);
+ //   console.log('carrinho ', x);
 }
 
 
@@ -22,7 +24,7 @@ function calcularPreco(cidadeId, diasId, opcoesId, displayId) {
         preco = 0;
     }
 
-    console.log(`Preço final para ${cidadeId}:`, preco);
+   // console.log(`Preço final para ${cidadeId}:`, preco);
     
     var displayElement = document.getElementById(displayId);
     displayElement.innerHTML = '$' + preco;
@@ -53,14 +55,26 @@ function calcular_tudo() {
 
     var displayTot = document.getElementById('displayTot');
     displayTot.innerHTML = '$' + precoTotal;
+    localStorage.setItem('valor_total', precoTotal);
+   // mostrarTot();
+}
+
+function mostrarTot(){
+    var valorTotal = document.getElementById('valorTotal');
+    total = localStorage.getItem('valor_total');
+    total = parseFloat(total);
+    console.log("total", total);
+    valorTotal.innerHTML = '$ ' + total;
+    console.log("total", total);
 }
 function remover_tabela(){
     var tabela = document.getElementById('tabelaC');
     x -= 1;
     carrinhoDisplay();
-    console.log('x ', x );
+//    console.log('x ', x );
     if(x < 1){
         tabela.style.display = "none";
     }
 }
 setInterval(calcular_tudo, 500);
+setInterval(mostrarTot, 1000);

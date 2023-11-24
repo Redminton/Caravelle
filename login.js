@@ -25,16 +25,14 @@ function login(){
 function coletarDias() {
    // return new Promise((resolve, reject) => {
         var dias = document.getElementById('dias').value;
-        localStorage.setItem('iddias', dias);
-        dias2 = localStorage.getItem('iddias');
         //document.cookie = `iddias=${dias}; path=/;`;
         //var dias2 = obterDias();
-        console.log(dias2);
+       // console.log(dias2);
        // resolve(dias2);
     //});
         var categoria = document.getElementById('opcoes').value;
         preco = categoria * dias;
-        console.log("preço", preco);
+    //    console.log("preço", preco);
         var  preco_card = document.getElementById("preco_card");
         preco_card.innerHTML = '$ ' + preco;
 }
@@ -60,8 +58,7 @@ setInterval(coletarDias, 500);
             window.location.href = 'admin.html';
         } else {
             alert('Usuário ou senha incorretos. Tente novamente.');
-            dias2= localStorage.getItem('iddias');
-            console.log(dias2);
+           // console.log(dias2);
              //console.log(obterDias());
             //console.log(document.cookie);
         }
@@ -69,6 +66,19 @@ setInterval(coletarDias, 500);
    //     console.error('Erro ao coletar dias:', error);
  //   }
 }
+function descerPix() {
+    var elemento2 = document.getElementById('imgPix');
+    if (elemento2.style.display === 'none' || elemento2.style.display === '') {
+        elemento2.style.display = 'block';
+    } else {
+        elemento2.style.display = 'none';
+    } 
+  }
+
+
+
+
+
 
 
 function carregamento(){
