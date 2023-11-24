@@ -14,16 +14,21 @@
 
 
 <script type="text/javascript">
-
 ddsmoothmenu.init({
 	mainmenuid: "top_nav", //menu DIV id
 	orientation: 'h', //Horizontal or vertical menu: Set to "h" or "v"
 	classname: 'ddsmoothmenu', //class added to menu's outer DIV
-	//customtheme: ["#1c5a80", "#18374a"],
 	contentsource: "markup" //"markup" or ["container_id", "path_to_menu_file"]
 })
 </script>
 </head>
+
+
+
+
+
+
+
 
 
 
@@ -34,16 +39,14 @@ ddsmoothmenu.init({
 <body>
 <div id="templatemo_body_wrapper">
 <div id="templatemo_wrapper">
-
 	<div id="templatemo_header">
-       
     	<div id="site_title"><h1><a href="index.html">Caravelle</a></h1></div>
         <div id="header_right">
         	<p>
 	        <a href="#">Minha conta</a> | <a href="#">Lista de desejos</a> | <a href="carrinho.html">Carrinho</a> 
             | <a href="admin.html">Sair</a> | <button id="bot_login" onclick="login()">Entrar</button>
             <p>
-            	Meu Carrinho: <strong><span id="carrinhoDisplay">3 itens</span></strong> 
+            	Meu Carrinho: <strong><span id="carrinhoDisplay">x</span></strong> 
                 ( <a href="carrinho.html">Mostrar</a> )
 			</p>
 		</div>
@@ -65,14 +68,14 @@ ddsmoothmenu.init({
                   </ul>
                 </li>
                 <li><a href="about.html">Sobre</a>
-                    <ul>
+                   <!-- <ul>
                         <li><a href="#submenu1">Sub menu 1</a></li>
                         <li><a href="#submenu2">Sub menu 2</a></li>
                         <li><a href="#submenu3">Sub menu 3</a></li>
-                  </ul>
+                  </ul> -->
                 </li>
                 <li><a href="faqs.html">FAQs</a></li>
-                <li><a href="checkout.html">Pagamento</a></li>
+                <li><a href="pagamento.html">Pagamento</a></li>
                 <li><a href="contact.html">Contato</a></li>
             </ul>
             <br style="clear: left" />
@@ -262,10 +265,15 @@ ddsmoothmenu.init({
 
     
     <div id="templatemo_footer">
-    	<p><a href="index.html">início</a> | <a href="products.html">Produtos</a> | <a href="#">Sobre</a> 
-            | <a href="#">FAQs</a> | <a href="#">Pagamento</a> | <a href="#">Contato</a>
+    	<p><a href="index.html">início</a> 
+            | <a href="products.html">Produtos</a> 
+            | <a href="about.html">Sobre</a> 
+            | <a href="faqs.html">FAQs</a> 
+            | <a href="pagamento.html">Pagamento</a> 
+            | <a href="contact.html">Contato</a>
 		</p>
-    	Copyright © 1500 <a href="https//redminton.github.io">Caravelle LTDA</a></div> 
+    	Copyright © 1500 <a href="http://redminton.github.io">Caravelle LTDA</a>
+    </div> 
 </div> 
 </div> 
 <script>
@@ -278,5 +286,4 @@ ddsmoothmenu.init({
     <script type="text/javascript" src="login.js"></script>
     <script type="text/javascript" src="calculadora.js"></script>
 </body>
-
 </html>
