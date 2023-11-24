@@ -1,3 +1,4 @@
+
 <html lang="pt-br">
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,8 +10,8 @@
 <link rel="stylesheet" href="nivo-slider.css" type="text/css" media="screen" />
 <link rel="stylesheet" type="text/css" href="css/ddsmoothmenu.css" />
 <script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/ddsmoothmenu.js">
-</script>
+<script type="text/javascript" src="js/ddsmoothmenu.js"></script>
+
 
 <script type="text/javascript">
 
@@ -25,110 +26,140 @@ ddsmoothmenu.init({
 </head>
 
 <body>
-
 <div id="templatemo_body_wrapper">
 <div id="templatemo_wrapper">
 
 	<div id="templatemo_header">
-    	<div id="site_title"><h1><a href="#">Online Shoes Store</a></h1></div>
+       
+    	<div id="site_title"><h1><a href="index.html">Caravelle</a></h1></div>
         <div id="header_right">
         	<p>
-	        <a href="#">My Account</a> | <a href="#">My Wishlist</a> | <a href="#">My Cart</a> | <a href="#">Checkout</a> | <a href="#">Log In</a></p>
+	        <a href="#">Minha conta</a> | <a href="#">Lista de desejos</a> | <a href="carrinho.html">Carrinho</a> 
+            | <a href="admin.html">Sair</a> | <button id="bot_login" onclick="login()">Entrar</button>
             <p>
-            	Shopping Cart: <strong>3 items</strong> ( <a href="shoppingcart.html">Show Cart</a> )
+            	Meu Carrinho: <strong><span id="carrinhoDisplay">3 itens</span></strong> 
+                ( <a href="carrinho.html">Mostrar</a> )
 			</p>
 		</div>
         <div class="cleaner"></div>
-    </div> <!-- END of templatemo_header -->
-    
+    </div> 
     <div id="templatemo_menubar">
     	<div id="top_nav" class="ddsmoothmenu">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="products.html">Products</a>
+                <li><a href="index.html" class="selected">Home</a></li>
+                <li><a href="products.html">Produtos</a>
+                    <ul>
+                        <li><a href="#submenu1">Cidades no Brasl</a></li>
+                        <li><a href="#submenu2">Europa</a></li>
+                        <li><a href="#submenu3">Ásia</a></li>
+                        <li><a href="#submenu4">Africa</a></li>
+                        <li><a href="#submenu5">Praias</a></li>
+                        <li><a href="#submenu5">Américas</a></li>
+                        <li><a href="#submenu5">Oceania</a></li>
+                  </ul>
+                </li>
+                <li><a href="about.html">Sobre</a>
                     <ul>
                         <li><a href="#submenu1">Sub menu 1</a></li>
                         <li><a href="#submenu2">Sub menu 2</a></li>
                         <li><a href="#submenu3">Sub menu 3</a></li>
-                        <li><a href="#submenu4">Sub menu 4</a></li>
-                        <li><a href="#submenu5">Sub menu 5</a></li>
                   </ul>
                 </li>
-                <li><a href="about.html">About</a>
-                    <ul>
-                        <li><a href="#submenu1">Sub menu 1</a></li>
-                        <li><a href="#submenu2">Sub menu 2</a></li>
-                        <li><a href="#submenu3">Sub menu 3</a></li>
-                  </ul>
-                </li>
-                <li><a href="faqs.html" class="selected">FAQs</a></li>
-                <li><a href="checkout.html">Checkout</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="faqs.html">FAQs</a></li>
+                <li><a href="checkout.html">Pagamento</a></li>
+                <li><a href="contact.html">Contato</a></li>
             </ul>
             <br style="clear: left" />
-        </div> <!-- end of ddsmoothmenu -->
+        </div> 
         <div id="templatemo_search">
             <form action="#" method="get">
               <input type="text" value=" " name="keyword" id="keyword" title="keyword" onfocus="clearText(this)" onblur="clearText(this)" class="txt_field" />
               <input type="submit" name="Search" value=" " alt="Search" id="searchbutton" title="Search" class="sub_btn"  />
             </form>
         </div>
-    </div> <!-- END of templatemo_menubar -->
+    </div> 
     
     <div id="templatemo_main">
     	<div id="sidebar" class="float_l">
         	<div class="sidebar_box"><span class="bottom"></span>
-            	<h3>Categories</h3>   
+            	<h3>Principais destinos</h3>   
                 <div class="content"> 
                 	<ul class="sidebar_list">
-                    	<li class="first"><a href="#">Sed eget purus</a></li>
-                        <li><a href="#">Vestibulum eleifend</a></li>
-                        <li><a href="#">Nulla odio ipsum</a></li>
-                        <li><a href="#">Suspendisse posuere</a></li>
-                        <li><a href="#">Nunc a dui sed</a></li>
-                        <li><a href="#">Curabitur ac mauris</a></li>
-                        <li><a href="#">Mauris nulla tortor</a></li>
-                        <li><a href="#">Nullam ultrices</a></li>
-                        <li><a href="#">Nulla odio ipsum</a></li>
-                        <li><a href="#">Suspendisse posuere</a></li>
-                        <li><a href="#">Nunc a dui sed</a></li>
-                        <li><a href="#">Curabitur ac mauris</a></li>
-                        <li><a href="#">Mauris nulla tortor</a></li>
-                        <li><a href="#">Nullam ultrices</a></li>
-                        <li class="last"><a href="#">Sed eget purus</a></li>
+                    	<li class="first"><a href="detalhes_prod.html">Salvador</a></li>
+                        <li><a href="detalhes_prod.html">Fortaleza</a></li>
+                        <li><a href="detalhes_prod.html">São paulo</a></li>
+                        <li><a href="detalhes_prod.html">Rio de Janeiro</a></li>
+                        <li><a href="detalhes_prod.html">Tóquio</a></li>
+                        <li><a href="detalhes_prod.html">Cancún</a></li>
+                        <li><a href="detalhes_prod.html">Roma</a></li>
+                        <li><a href="detalhes_prod.html">Paris</a></li>
+                        <li><a href="detalhes_prod.html">Nápoles</a></li>
+                        <li><a href="detalhes_prod.html">Seoul</a></li>
+                        <li><a href="detalhes_prod.html">Melbourne</a></li>
+                        <li><a href="detalhes_prod.html">Mumbai</a></li>
+                        <li><a href="detalhes_prod.html">Curitiba</a></li>
+                        <li><a href="detalhes_prod.html">Marrakesh</a></li>
+                        <li class="last"><a href="detalhes_prod.html">Luxor</a></li>
                     </ul>
                 </div>
             </div>
             <div class="sidebar_box"><span class="bottom"></span>
-            	<h3>Bestsellers </h3>   
+            	<h3>Top Semanal</h3>   
                 <div class="content"> 
                 	<div class="bs_box">
-                    	<a href="#"><img src="images/templatemo_image_01.jpg" alt="image" /></a>
-                        <h4><a href="#">Donec nunc nisl</a></h4>
-                        <p class="price">$10</p>
+                    	<a href="detalhes_prod.html"><img src="images/paris.png" alt="image" /></a>
+                        <h4><a href="detalhes_prod.html">Paris</a></h4>
+                        <p class="price">$8-500 a day</p>
                         <div class="cleaner"></div>
                     </div>
                     <div class="bs_box">
-                    	<a href="#"><img src="images/templatemo_image_01.jpg" alt="image" /></a>
-                        <h4><a href="#">Lorem ipsum dolor sit</a></h4>
-                        <p class="price">$12</p>
+                    	<a href="detalhes_prod.html"><img src="images/cancun.png" alt="image" /></a>
+                        <h4><a href="detalhes_prod.html">Cancún</a></h4>
+                        <p class="price">$8-250 a day</p>
                         <div class="cleaner"></div>
                     </div>
                     <div class="bs_box">
-                    	<a href="#"><img src="images/templatemo_image_01.jpg" alt="image" /></a>
-                        <h4><a href="#">Phasellus ut dui</a></h4>
-                        <p class="price">$20</p>
+                    	<a href="detalhes_prod.html"><img src="images/roma.png" alt="image" /></a>
+                        <h4><a href="detalhes_prod.html">Roma</a></h4>
+                        <p class="price">$8-400 a day</p>
                         <div class="cleaner"></div>
                     </div>
                     <div class="bs_box">
-                    	<a href="#"><img src="images/templatemo_image_01.jpg" alt="image" /></a>
-                        <h4><a href="#">Vestibulum ante</a></h4>
-                        <p class="price">$8</p>
+                    	<a href="detalhes_prod.html"><img src="images/seoul.png" alt="image" /></a>
+                        <h4><a href="detalhes_prod.html">Seoul</a></h4>
+                        <p class="price">$8-350 a day</p>
                         <div class="cleaner"></div>
                     </div>
                 </div>
             </div>
         </div>
+        <div>
+            <div id="content" class="float_r">
+                <div id="login">  
+                    <div class="login-container">
+                        <h2>Acesse sua conta</h2>
+                        <form>
+                            <label for="usuario">Usuário:</label>
+                            <input type="text" id="usuario" name="username" required>
+                            <label for="senha">Senha:</label>
+                            <input type="password" id="senha" name="password" required>
+                
+                            <button type="button" id="bot_login2" onclick="acesso()">Entrar</button>
+                        </form>
+                    </div>
+                </div>
+                <br>
+        </div>
+        </div>
+
+
+
+
+
+
+
+
+
         <div id="content" class="float_r faqs">
         	<h1>FAQs</h1>
             <h5>How do I  know if my order has been placed?</h5>
@@ -154,18 +185,27 @@ ddsmoothmenu.init({
             <p>This website respects your privacy and ensure that  you understand what information we need to complete your order, and what  information you can choose to share with us and with our marketing partners.  For complete information on our privacy policy, please visit our <a href="#">Privacy Policy</a>  page.</p>
         </div> 
         <div class="cleaner"></div>
-    </div> <!-- END of templatemo_main -->
+    </div> 
+    
+
+
     
     <div id="templatemo_footer">
-    	<p><a href="#">Home</a> | <a href="#">Products</a> | <a href="#">About</a> | <a href="#">FAQs</a> | <a href="#">Checkout</a> | <a href="#">Contact Us</a>
+    	<p><a href="index.html">início</a> | <a href="products.html">Produtos</a> | <a href="#">Sobre</a> 
+            | <a href="#">FAQs</a> | <a href="#">Pagamento</a> | <a href="#">Contato</a>
 		</p>
-
-		Copyright © 2072 <a href="#">Your Company Name</a> <!-- Credit: www.templatemo.com -->
-    	
-    </div> <!-- END of templatemo_footer -->
-    
-</div> <!-- END of templatemo_wrapper -->
-</div> <!-- END of templatemo_body_wrapper -->
-
+    	Copyright © 1500 <a href="https://redminton.github.io">Caravelle LTDA</a></div> 
+</div> 
+</div> 
+<script>
+    document.getElementById('senha').addEventListener('keydown', function (event) {
+        if (event.key === 'Enter') {
+            acesso();
+        }
+    });
+    </script>
+    <script type="text/javascript" src="login.js"></script>
+    <script type="text/javascript" src="calculadora.js"></script>
 </body>
+
 </html>
