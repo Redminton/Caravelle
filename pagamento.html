@@ -1,3 +1,4 @@
+
 <html lang="pt-br">
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,16 +10,14 @@
 <link rel="stylesheet" href="nivo-slider.css" type="text/css" media="screen" />
 <link rel="stylesheet" type="text/css" href="css/ddsmoothmenu.css" />
 <script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/ddsmoothmenu.js">
-</script>
+<script type="text/javascript" src="js/ddsmoothmenu.js"></script>
+
 
 <script type="text/javascript">
-
 ddsmoothmenu.init({
 	mainmenuid: "top_nav", //menu DIV id
 	orientation: 'h', //Horizontal or vertical menu: Set to "h" or "v"
 	classname: 'ddsmoothmenu', //class added to menu's outer DIV
-	//customtheme: ["#1c5a80", "#18374a"],
 	contentsource: "markup" //"markup" or ["container_id", "path_to_menu_file"]
 })
 </script>
@@ -26,132 +25,159 @@ ddsmoothmenu.init({
 
 
 
+
+
+
+
+
 <body>
-    <div id="templatemo_body_wrapper">
-    <div id="templatemo_wrapper">
-        <div id="templatemo_header">
-            <div id="site_title"><h1><a href="index.html">Caravelle</a></h1></div>
-            <div id="header_right">
-                <p>
-                <a href="minha_conta.html">Minha conta</a> |  <a href="carrinho.html">Carrinho</a> 
-                | <a href="admin.html">Sair</a> | <button id="bot_login" onclick="login()">Entrar</button>
-                <p>
-                    Meu Carrinho: <strong><span id="carrinhoDisplay">x</span></strong> 
-                    ( <a href="carrinho.html">Mostrar</a> )
-                </p>
-            </div>
-            <div class="cleaner"></div>
+<div id="templatemo_body_wrapper">
+<div id="templatemo_wrapper">
+	<div id="templatemo_header">
+    	<div id="site_title"><h1><a href="index.html">Caravelle</a></h1></div>
+        <div id="header_right">
+        	<p>
+	        <a href="#">Minha conta</a> | <a href="#">Lista de desejos</a> | <a href="carrinho.html">Carrinho</a> 
+            | <a href="admin.html">Sair</a> | <button id="bot_login" onclick="login()">Entrar</button>
+            <p>
+            	Meu Carrinho: <strong><span id="carrinhoDisplay">x</span></strong> 
+                ( <a href="carrinho.html">Mostrar</a> )
+			</p>
+		</div>
+        <div class="cleaner"></div>
+    </div> 
+    <div id="templatemo_menubar">
+    	<div id="top_nav" class="ddsmoothmenu">
+            <ul>
+                <li><a href="index.html" class="selected">Home</a></li>
+                <li><a href="products.html">Produtos</a>
+                    <ul>
+                        <li><a href="#submenu1">Cidades no Brasl</a></li>
+                        <li><a href="#submenu2">Europa</a></li>
+                        <li><a href="#submenu3">Ásia</a></li>
+                        <li><a href="#submenu4">Africa</a></li>
+                        <li><a href="#submenu5">Praias</a></li>
+                        <li><a href="#submenu5">Américas</a></li>
+                        <li><a href="#submenu5">Oceania</a></li>
+                  </ul>
+                </li>
+                <li><a href="about.html">Sobre</a>
+                   <!-- <ul>
+                        <li><a href="#submenu1">Sub menu 1</a></li>
+                        <li><a href="#submenu2">Sub menu 2</a></li>
+                        <li><a href="#submenu3">Sub menu 3</a></li>
+                  </ul> -->
+                </li>
+                <li><a href="faqs.html">FAQs</a></li>
+                <li><a href="pagamento.html">Pagamento</a></li>
+                <li><a href="contact.html">Contato</a></li>
+            </ul>
+            <br style="clear: left" />
         </div> 
-        <div id="templatemo_menubar">
-            <div id="top_nav" class="ddsmoothmenu">
-                <ul>
-                    <li><a href="index.html" class="selected">Home</a></li>
-                    <li><a href="products.html">Produtos</a>
-                        <ul>
-                            <li><a href="#submenu1">Cidades no Brasl</a></li>
-                            <li><a href="#submenu2">Europa</a></li>
-                            <li><a href="#submenu3">Ásia</a></li>
-                            <li><a href="#submenu4">Africa</a></li>
-                            <li><a href="#submenu5">Praias</a></li>
-                            <li><a href="#submenu5">Américas</a></li>
-                            <li><a href="#submenu5">Oceania</a></li>
-                      </ul>
-                    </li>
-                    <li><a href="about.html">Sobre</a>
-                       <!-- <ul>
-                            <li><a href="#submenu1">Sub menu 1</a></li>
-                            <li><a href="#submenu2">Sub menu 2</a></li>
-                            <li><a href="#submenu3">Sub menu 3</a></li>
-                      </ul> -->
-                    </li>
-                    <li><a href="faqs.html">FAQs</a></li>
-                    <li><a href="pagamento.html">Pagamento</a></li>
-                    <li><a href="contact.html">Contato</a></li>
-                </ul>
-                <br style="clear: left" />
-            </div> 
-            <div id="templatemo_search">
-                <form action="#" method="get">
-                  <input type="text" value=" " name="keyword" id="keyword" title="keyword" onfocus="clearText(this)" onblur="clearText(this)" class="txt_field" />
-                  <input type="submit" name="Search" value=" " alt="Search" id="searchbutton" title="Search" class="sub_btn"  />
-                </form>
-            </div>
-        </div> 
-        
-    
-    
+        <div id="templatemo_search">
+            <form action="#" method="get">
+              <input type="text" value=" " name="keyword" id="keyword" title="keyword" onfocus="clearText(this)" onblur="clearText(this)" class="txt_field" />
+              <input type="submit" name="Search" value=" " alt="Search" id="searchbutton" title="Search" class="sub_btn"  />
+            </form>
+        </div>
+    </div> 
     
     <div id="templatemo_main">
     	<div id="sidebar" class="float_l">
         	<div class="sidebar_box"><span class="bottom"></span>
-            	<h3>Categories</h3>   
+            	<h3>Principais destinos</h3>   
                 <div class="content"> 
                 	<ul class="sidebar_list">
-                    	<li class="first"><a href="#">Sed eget purus</a></li>
-                        <li><a href="#">Vestibulum eleifend</a></li>
-                        <li><a href="#">Nulla odio ipsum</a></li>
-                        <li><a href="#">Suspendisse posuere</a></li>
-                        <li><a href="#">Nunc a dui sed</a></li>
-                        <li><a href="#">Curabitur ac mauris</a></li>
-                        <li><a href="#">Mauris nulla tortor</a></li>
-                        <li><a href="#">Nullam ultrices</a></li>
-                        <li><a href="#">Nulla odio ipsum</a></li>
-                        <li><a href="#">Suspendisse posuere</a></li>
-                        <li><a href="#">Nunc a dui sed</a></li>
-                        <li><a href="#">Curabitur ac mauris</a></li>
-                        <li><a href="#">Mauris nulla tortor</a></li>
-                        <li><a href="#">Nullam ultrices</a></li>
-                        <li class="last"><a href="#">Sed eget purus</a></li>
+                    	<li class="first"><a href="detalhes_prod.html">Salvador</a></li>
+                        <li><a href="detalhes_prod.html">Fortaleza</a></li>
+                        <li><a href="detalhes_prod.html">São paulo</a></li>
+                        <li><a href="detalhes_prod.html">Rio de Janeiro</a></li>
+                        <li><a href="detalhes_prod.html">Tóquio</a></li>
+                        <li><a href="detalhes_prod.html">Cancún</a></li>
+                        <li><a href="detalhes_prod.html">Roma</a></li>
+                        <li><a href="detalhes_prod.html">Paris</a></li>
+                        <li><a href="detalhes_prod.html">Nápoles</a></li>
+                        <li><a href="detalhes_prod.html">Seoul</a></li>
+                        <li><a href="detalhes_prod.html">Melbourne</a></li>
+                        <li><a href="detalhes_prod.html">Mumbai</a></li>
+                        <li><a href="detalhes_prod.html">Curitiba</a></li>
+                        <li><a href="detalhes_prod.html">Marrakesh</a></li>
+                        <li class="last"><a href="detalhes_prod.html">Luxor</a></li>
                     </ul>
                 </div>
             </div>
             <div class="sidebar_box"><span class="bottom"></span>
-            	<h3>Bestsellers </h3>   
+            	<h3>Top Semanal</h3>   
                 <div class="content"> 
                 	<div class="bs_box">
-                    	<a href="#"><img src="images/templatemo_image_01.jpg" alt="image" /></a>
-                        <h4><a href="#">Donec nunc nisl</a></h4>
-                        <p class="price">$10</p>
+                    	<a href="detalhes_prod.html"><img src="images/paris.png" alt="image" /></a>
+                        <h4><a href="detalhes_prod.html">Paris</a></h4>
+                        <p class="price">$8-500 a day</p>
                         <div class="cleaner"></div>
                     </div>
                     <div class="bs_box">
-                    	<a href="#"><img src="images/templatemo_image_01.jpg" alt="image" /></a>
-                        <h4><a href="#">Lorem ipsum dolor sit</a></h4>
-                        <p class="price">$12</p>
+                    	<a href="detalhes_prod.html"><img src="images/cancun.png" alt="image" /></a>
+                        <h4><a href="detalhes_prod.html">Cancún</a></h4>
+                        <p class="price">$8-250 a day</p>
                         <div class="cleaner"></div>
                     </div>
                     <div class="bs_box">
-                    	<a href="#"><img src="images/templatemo_image_01.jpg" alt="image" /></a>
-                        <h4><a href="#">Phasellus ut dui</a></h4>
-                        <p class="price">$20</p>
+                    	<a href="detalhes_prod.html"><img src="images/roma.png" alt="image" /></a>
+                        <h4><a href="detalhes_prod.html">Roma</a></h4>
+                        <p class="price">$8-400 a day</p>
                         <div class="cleaner"></div>
                     </div>
                     <div class="bs_box">
-                    	<a href="#"><img src="images/templatemo_image_01.jpg" alt="image" /></a>
-                        <h4><a href="#">Vestibulum ante</a></h4>
-                        <p class="price">$8</p>
+                    	<a href="detalhes_prod.html"><img src="images/seoul.png" alt="image" /></a>
+                        <h4><a href="detalhes_prod.html">Seoul</a></h4>
+                        <p class="price">$8-350 a day</p>
                         <div class="cleaner"></div>
                     </div>
                 </div>
             </div>
         </div>
+        <div>
+            <div id="content" class="float_r">
+                <div id="login">  
+                    <div class="login-container">
+                        <h2>Acesse sua conta</h2>
+                        <form>
+                            <label for="usuario">Usuário:</label>
+                            <input type="text" id="usuario" name="username" required>
+                            <label for="senha">Senha:</label>
+                            <input type="password" id="senha" name="password" required>
+                
+                            <button type="button" id="bot_login2" onclick="acesso()">Entrar</button>
+                        </form>
+                    </div>
+                </div>
+                <br>
+        </div>
+        </div>
+
+
+
+
+
+
+
         <div id="content" class="float_r">
-        	<h2>Checkout</h2>
-            <h5><strong>BILLING INFORMATION</strong></h5>
+        	<h2>Pagamento</h2>
+            <h5><strong>Informações para a compra</strong></h5>
             <div class="content_half float_l checkout">
-				Full Name (must be same as on your credit card):  
+				Nome Completo (deve ser o mesmo do cartão de crédito):  
                   <input type="text"  style="width:300px;"  />
                 <br />
                 <br />
-              Address:
+              Endereço:
 				<input type="text"  style="width:300px;"  />
                 <br />
                 <br />
-              City:
+              Cidade:
                 <input type="text"  style="width:300px;"  />
                 <br />
                 <br />
-                Country:
+                País:
                 <input type="text"  style="width:300px;"  />
             </div>
             
@@ -160,30 +186,49 @@ ddsmoothmenu.init({
 				<input type="text"  style="width:300px;"  />
                 <br />
                 <br />
-          PHONE<br />
-				<span style="font-size:10px">Please, specify your reachable phone number. YOU MAY BE GIVEN A CALL TO VERIFY AND COMPLETE THE ORDER.</span>
-                <input type="text"  style="width:300px;"  />
+          Telefone<br />
+				<!--<span style="font-size:10px">
+                    Please, specify your reachable phone number. YOU MAY BE GIVEN A CALL TO VERIFY AND COMPLETE THE ORDER.</span>
+                -->
+                    <input type="text"  style="width:300px;"  />
             </div>
             
             <div class="cleaner h50"></div>
-            <h3>SHOPPING CART</h3>
-            <h4>TOTAL AMOUNT: <strong>$240</strong></h4>
+            <h3>Carrinho de Compras</h3>
+            <h4>TOTAL: <p id="valorTotal"><strong>$</strong></p></h4>
 			<p><input type="checkbox" />
-			I accept the <a href="#">terms of use</a> of this website.</p>
+			Eu aceito os <a href="#">termos de uso</a> deste site.</p>
             <table style="border:1px solid #CCCCCC;" width="100%">
                 <tr>
                     <td height="80px"> <img src="images/paypal.gif" alt="paypal" /></td>
-                    <td width="400px;" style="padding: 0px 20px;">Recommended if you have a PayPal account. Fastest delivery time.
+                    <td width="400px;" style="padding: 0px 20px;">Recomendado se você tiver uma conta PayPal. 
+                        Aprovação imediata.
                     </td>
-                    <td><a href="#" class="more">PAYPAL</a></td>
+                    <td><a href="https://www.paypal.com/br/home" class="more">PAYPAL</a></td>
                 </tr>
                 <tr>
-                    <td  height="80px"><img src="images/2co.gif" alt="paypal" />
+                    <td  height="80px"><img src="images/visa.png" alt="paypal" />
                     </td>
-                    <td  width="400px;" style="padding: 0px 20px;">2Checkout.com, Inc. is an authorized retailer of goods and services. 2CheckOut accepts customer orders via online checks, Visa, MasterCard, Discover, American Express, Diners, JCB and debit cards with the Visa, Mastercard logo. Validate <a href="http://validator.w3.org/check?uri=referer" rel="nofollow">XHTML</a> &amp; <a href="http://jigsaw.w3.org/css-validator/check/referer" rel="nofollow">CSS</a>.</td>
-                    <td><a href="#" class="more">2CHECKOUT</a></td>
+                    <td  width="400px;" style="padding: 0px 20px;">
+                        Pague com Mastercard ou Visa, o método mais comum.</td>
+                    <td><a href="#" class="more">MasterCard/Visa</a></td>
+                </tr>
+                <tr>
+                    <td  height="80px"><button  id="botPix" onclick="descerPix()">
+                        <img src="images/pix.png" alt="paypal" /></button>
+                    </td>
+                    <td  width="400px;" style="padding: 0px 20px;">
+                        Pague com Pix, o método mais rápido e seguro.</td>
+                    <td>
+                        <a href="images/qrcode-pix.png" class="more">Pagar com Pix</a>
+                    </td>
                 </tr>
             </table>
+            <div id="divPix">
+                <div id="imgPix" class="entrada">
+                  <img src="images/qrcode-pix.png" alt="Imagem">
+                </div>
+            </div>
         </div> 
         <div class="cleaner"></div>
     </div> 
