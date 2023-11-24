@@ -1,4 +1,5 @@
 
+
 <html lang="pt-br">
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,51 +15,61 @@
 
 
 <script type="text/javascript">
-
 ddsmoothmenu.init({
 	mainmenuid: "top_nav", //menu DIV id
 	orientation: 'h', //Horizontal or vertical menu: Set to "h" or "v"
 	classname: 'ddsmoothmenu', //class added to menu's outer DIV
-	//customtheme: ["#1c5a80", "#18374a"],
 	contentsource: "markup" //"markup" or ["container_id", "path_to_menu_file"]
 })
 </script>
 </head>
 
-<body  onload="calcular_tudo()">
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+<body>
 <div id="templatemo_body_wrapper">
 <div id="templatemo_wrapper">
-
 	<div id="templatemo_header">
-       
     	<div id="site_title"><h1><a href="index.html">Caravelle</a></h1></div>
         <div id="header_right">
         	<p>
-	        <a href="#">Minha conta</a> | <a href="#">Lista de desejos</a> | <a href="carrinho.html">Carrinho</a> 
+	        <a href="minha_conta.html">Minha conta</a> |  <a href="carrinho.html">Carrinho</a> 
             | <a href="admin.html">Sair</a> | <button id="bot_login" onclick="login()">Entrar</button>
             <p>
-            	Meu Carrinho: <strong><span id="carrinhoDisplay">3 itens</span></strong> 
+            	Meu Carrinho: <strong><span id="carrinhoDisplay">x</span></strong> 
                 ( <a href="carrinho.html">Mostrar</a> )
 			</p>
 		</div>
         <div class="cleaner"></div>
     </div> 
-    
     <div id="templatemo_menubar">
     	<div id="top_nav" class="ddsmoothmenu">
             <ul>
                 <li><a href="index.html" class="selected">Home</a></li>
                 <li><a href="products.html">Produtos</a>
                     <ul>
-                        <li><a href="#submenu1">Sub menu 1</a></li>
-                        <li><a href="#submenu2">Sub menu 2</a></li>
-                        <li><a href="#submenu3">Sub menu 3</a></li>
-                        <li><a href="#submenu4">Sub menu 4</a></li>
-                        <li><a href="#submenu5">Sub menu 5</a></li>
+                        <li><a href="#submenu1">Cidades no Brasl</a></li>
+                        <li><a href="#submenu2">Europa</a></li>
+                        <li><a href="#submenu3">Ásia</a></li>
+                        <li><a href="#submenu4">Africa</a></li>
+                        <li><a href="#submenu5">Praias</a></li>
+                        <li><a href="#submenu5">Américas</a></li>
+                        <li><a href="#submenu5">Oceania</a></li>
                   </ul>
                 </li>
                 <li><a href="about.html">Sobre</a>
-                    <!-- <ul>
+                   <!-- <ul>
                         <li><a href="#submenu1">Sub menu 1</a></li>
                         <li><a href="#submenu2">Sub menu 2</a></li>
                         <li><a href="#submenu3">Sub menu 3</a></li>
@@ -77,6 +88,9 @@ ddsmoothmenu.init({
             </form>
         </div>
     </div> 
+    
+
+
     
     <div id="templatemo_main">
     	<div id="sidebar" class="float_l">
