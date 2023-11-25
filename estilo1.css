@@ -375,6 +375,58 @@ h6 { font-size: 12px; margin: 0 0 5px; padding: 0; }
 	animation: descendo 1s ease-out;
 }
 
+.cartao {
+	background-color: #ffffff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: black;
+	margin-left: 25%;
+	margin-right: 1%;
+	padding: 20px;
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	background-image: url(images/img_head.jpg);
+	/* background-color: #fff; */
+	text-align: left;
+	display: flex;
+	flex-direction: row; /* Alinha os elementos em linha (horizontal) */
+  }
+  .cartao img {
+	max-width: 150px;
+	border-radius: 8px;
+	 /* margin-right: 20px; */
+  }
+
+  .info {
+	flex-grow: 1; /* Faz com que o texto ocupe o espaço restante */
+	max-width: 250px;
+  }
+
+  .qrcode img {
+	max-width: 200%;
+      max-height: 150px; /* Define uma altura máxima para o QR Code */
+      border-radius: 8px;
+  }
+  .bot_imprimir {
+	margin-top: 10px;
+	padding: 10px;
+	background-color: #4CAF50;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+  }
+  .bot_imprimir:hover {
+	background-color: #000;
+  }
+
+
+
+
+
+
 
 
 
