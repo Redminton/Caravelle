@@ -74,7 +74,21 @@ function descerPix() {
         elemento2.style.display = 'none';
     } 
   }
-
+function pagar(){
+    var elemento3 = document.getElementById('bot_verifica');
+    var elemento4 = document.getElementById('tabelapag');
+    if (elemento3.style.display === 'none' || elemento3.style.display === '') {
+        elemento3.style.display = 'block';
+    } else {
+        elemento3.style.display = 'none';
+    } 
+    if (elemento4.style.display === 'none' || elemento4.style.display === '') {
+        elemento4.style.display = 'block';
+    } else {
+        elemento4.style.display = 'none';
+    } 
+  }
+ 
 
 
 

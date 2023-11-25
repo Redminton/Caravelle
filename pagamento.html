@@ -176,10 +176,7 @@ ddsmoothmenu.init({
                 <br />
               Cidade:
                 <input type="text"  style="width:300px;"  />
-                <br />
-                <br />
-                País:
-                <input type="text"  style="width:300px;"  />
+               
             </div>
             
             <div class="content_half float_r checkout">
@@ -192,6 +189,10 @@ ddsmoothmenu.init({
                     Please, specify your reachable phone number. YOU MAY BE GIVEN A CALL TO VERIFY AND COMPLETE THE ORDER.</span>
                 -->
                     <input type="text"  style="width:300px;"  />
+                    <br />
+                <br />
+                País:
+                <input type="text"  style="width:300px;"  />
             </div>
             
             <div class="cleaner h50"></div>
@@ -199,7 +200,10 @@ ddsmoothmenu.init({
             <h4>TOTAL: <p id="valorTotal"><strong>$</strong></p></h4>
 			<p><input type="checkbox" />
 			Eu aceito os <a href="#">termos de uso</a> deste site.</p>
-            <table style="border:1px solid #CCCCCC;" width="100%">
+            <button class="botaopag" onclick="pagar()">Pagar</button>
+          <br><br>
+
+            <table id="tabelapag" style="border:1px solid #CCCCCC;" width="100%">
                 <tr>
                     <td height="80px"> <img src="images/paypal.gif" alt="paypal" /></td>
                     <td width="400px;" style="padding: 0px 20px;">Recomendado se você tiver uma conta PayPal. 
@@ -224,7 +228,8 @@ ddsmoothmenu.init({
                         <a href="images/qrcode-pix.png" class="more">Pagar com Pix</a>
                     </td>
                 </tr>
-            </table>
+            </table><br><br>
+            <a href="cartao.html"><button class="botaopag" id="bot_verifica">Verificar pagamento</button></a>
             <div id="divPix">
                 <div id="imgPix" class="entrada">
                   <img src="images/qrcode-pix.png" alt="Imagem">

@@ -300,6 +300,9 @@ h6 { font-size: 12px; margin: 0 0 5px; padding: 0; }
 		border-radius: 4px;
 		cursor: pointer;
 	}
+	.login-container button:hover{
+		background-color: black;
+	}
 #preco_card{
 	margin-left: 20%;
 	font-size: larger;
@@ -352,11 +355,25 @@ h6 { font-size: 12px; margin: 0 0 5px; padding: 0; }
   .info p {
 	margin: 0;
   }
-
-
-
-
-
+.botaopag{
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer
+}
+.botaopag:hover{
+	background-color: black;
+}
+#bot_verifica{
+	display: none;
+	animation: descendo 1s ease-out;
+}
+#tabelapag{
+	display: none;
+	animation: descendo 1s ease-out;
+}
 
 
 
