@@ -89,10 +89,35 @@ function pagar(){
     } 
   }
  
+  var shownDivs = [];
 
+  function filtro(type) {
+      var index = shownDivs.indexOf(type);
+      if (index === -1) {
+          shownDivs.push(type);
+          //console.log('quais estão ativos', shownDivs);
+      } else {
+          shownDivs.splice(index, 1);
+      }
+      //console.log('divs', divs);
+      var divs = document.getElementsByClassName('box');
 
-
-
+      for (var i = 0; i < divs.length; i++) {
+          divs[i].style.display = 'none';
+      }
+      //console.log('type', type);
+      for (var j = 0; j < shownDivs.length; j++) {
+          var currentType = shownDivs[j];
+          // Mostra as divs específicas e as que começam com o mesmo prefixo
+          if (currentType === type || currentType.startsWith(type + '_')) {
+                var prefix = currentType.split('_')[0];
+                document.querySelectorAll('[id^="' + prefix + '_"]').forEach(function (elem) {
+                    elem.style.display = 'block';
+                    //console.log('funfa');
+                });
+          }
+      }
+    }
 
 
 function carregamento(){

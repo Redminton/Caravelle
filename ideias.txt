@@ -8,7 +8,6 @@ to do:
 
 -página de cada cidade
 
-- filtro dos continentes atraves de um botao
 
 -calculadora de preço ? salvar usando  LocalStorage
 

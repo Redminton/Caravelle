@@ -58,13 +58,18 @@ ddsmoothmenu.init({
                 <li><a href="index.html" class="selected">Home</a></li>
                 <li><a href="products.html">Produtos</a>
                     <ul>
-                        <li><a href="#submenu1">Cidades no Brasl</a></li>
-                        <li><a href="#submenu2">Europa</a></li>
-                        <li><a href="#submenu3">Ásia</a></li>
-                        <li><a href="#submenu4">Africa</a></li>
-                        <li><a href="#submenu5">Praias</a></li>
-                        <li><a href="#submenu5">Américas</a></li>
-                        <li><a href="#submenu5">Oceania</a></li>
+                        <li><a href="#" onclick="filtro('f1')" onmouseover="filtro('f1')">
+                            Cidades no Brasl</a></li>
+                        <li><a href="#" onclick="filtro('f2')"onmouseover="filtro('f2')">
+                            Europa</a></li>
+                        <li><a href="#" onclick="filtro('f3')"onmouseover="filtro('f3')">
+                            Ásia</a></li>
+                        <li><a href="#" onclick="filtro('f4')"onmouseover="filtro('f4')">
+                            Africa</a></li>
+                        <li><a href="#" onclick="filtro('f5')"onmouseover="filtro('f5')">
+                            Américas</a></li>
+                        <li><a href="#" onclick="filtro('f6')"onmouseover="filtro('f6')">
+                            Oceania</a></li>
                   </ul>
                 </li>
                 <li><a href="about.html">Sobre</a>
@@ -177,7 +182,7 @@ ddsmoothmenu.init({
 
         <div id="content" class="float_r">
         	<h1> Locais Disponíveis</h1>
-            <div class="product_box">
+            <div id="f1_1" class="box"><div class="product_box">
 	            <h3>Salvador</h3>
             	<a href="detalhes_prod.html"><img src="images/product/salvador3.jpg" alt="Shoes 1" /></a>
                 <p> "Salvador: Onde a alegria encontra o sol na dança das cores e ritmos na Baía de Todos os Santos."
@@ -185,7 +190,9 @@ ddsmoothmenu.init({
               <p class="product_price">$ 8 a 200 a day</p>
                 <a href="carrinho.html" class="addtocart"></a>
                 <a href="detalhes_prod.html" class="detail"></a>
-            </div>        	
+            </div>
+            </div>
+            <div id="f1_2" class="box">        	
             <div class="product_box">
             	<h3>Rio de Janeiro</h3>
             	<a href="detalhes_prod.html"><img src="images/product/rio1.jpg" alt="Shoes 2" /></a>
@@ -193,7 +200,8 @@ ddsmoothmenu.init({
             <p class="product_price">$ 80</p>
                 <a href="carrinho.html" class="addtocart"></a>
                 <a href="detalhes_prod.html" class="detail"></a>
-            </div>        	
+            </div></div>
+            <div id="f3_1" class="box">       	
             <div class="product_box no_margin_right">
             	<h3>Tóquio</h3>
             	<a href="detalhes_prod.html"><img src="images/product/toq1.jpg" alt="Shoes 3" /></a>
@@ -201,10 +209,9 @@ ddsmoothmenu.init({
               <p class="product_price">$ 60</p>
                 <a href="carrinho.html" class="addtocart"></a>
                 <a href="detalhes_prod.html" class="detail"></a>
-            </div>     
-            
-            <div class="cleaner"></div>
-               	
+            </div>
+            </div>  
+            <div id="f2_1" class="box">   
             <div class="product_box">
             	<h3>Paris</h3>
             	<a href="detalhes_prod.html"><img src="images/product/par1.jpg" alt="Shoes 4" /></a>
@@ -212,7 +219,9 @@ ddsmoothmenu.init({
               <p class="product_price">$ 260</p>
                 <a href="carrinho.html" class="addtocart"></a>
                 <a href="detalhes_prod.html" class="detail"></a>
-            </div>        	
+            </div>        
+            </div>	
+            <div id="f6_1" class="box">
             <div class="product_box">
 	            <h3>Melbourne</h3>
             	<a href="detalhes_prod.html"><img src="images/product/mel1.jpg" alt="Shoes 5" /></a>
@@ -220,7 +229,9 @@ ddsmoothmenu.init({
             <p class="product_price">$ 80</p>
                 <a href="carrinho.html" class="addtocart"></a>
                 <a href="detalhes_prod.html" class="detail"></a>
-            </div>        	
+            </div>  
+            </div>
+            <div id="f3_2" class="box">      	
             <div class="product_box no_margin_right">
             	<h3>Mumbai</h3>
             	<a href="detalhes_prod.html"><img src="images/product/006.jpg" alt="Shoes 6" /></a>
@@ -228,10 +239,9 @@ ddsmoothmenu.init({
               <p class="product_price">$ 190</p>
                 <a href="carrinho.html" class="addtocart"></a>
                 <a href="detalhes_prod.html" class="detail"></a>
-            </div>   
-            
-            <div class="cleaner"></div>
-                 	
+            </div>  
+            </div>
+            <div id="f2_2" class="box"> 
             <div class="product_box">
             	<h3>Nápoles</h3>
             	<a href="detalhes_prod.html"><img src="images/product/005.jpg" alt="Shoes 7" /></a>
@@ -239,7 +249,9 @@ ddsmoothmenu.init({
               <p class="product_price">$ 30</p>
                 <a href="carrinho.html" class="addtocart"></a>
                 <a href="detalhes_prod.html" class="detail"></a>
-            </div>        	
+            </div>   
+            </div>
+            <div id="f4_1" class="box">      	
             <div class="product_box">
             	<h3>Marrakesh</h3>
             	<a href="detalhes_prod.html"><img src="images/product/002.jpg" alt="Shoes 8" /></a>
@@ -248,6 +260,8 @@ ddsmoothmenu.init({
                 <a href="carrinho.html" class="addtocart"></a>
                 <a href="detalhes_prod.html" class="detail"></a>
             </div>        	
+            </div>
+            <div id="f1_3" class="box"> 
             <div class="product_box no_margin_right">
             	 <h3>Curitiba</h3>
             	<a href="detalhes_prod.html"><img src="images/product/001.jpg" alt="Shoes 9" /></a>
@@ -256,8 +270,8 @@ ddsmoothmenu.init({
                 <a href="carrinho.html" class="addtocart"></a>
                 <a href="detalhes_prod.html" class="detail"></a>
             </div>  
-            <div class="cleaner"></div>
-                 	
+            </div>
+            <div id="f4_2" class="box"> 
             <div class="product_box">
             	<h3>Luxor</h3>
             	<a href="detalhes_prod.html"><img src="images/product/003.jpg" alt="Shoes 7" /></a>
@@ -265,7 +279,9 @@ ddsmoothmenu.init({
               <p class="product_price">$ 30</p>
                 <a href="carrinho.html" class="addtocart"></a>
                 <a href="detalhes_prod.html" class="detail"></a>
-            </div>        	
+            </div>      
+            </div>
+            <div id="f5_1" class="box">   	
             <div class="product_box">
             	<h3>Cáncun</h3>
             	<a href="detalhes_prod.html"><img src="images/product/can1.jpg" alt="Shoes 8" /></a>
@@ -274,6 +290,8 @@ ddsmoothmenu.init({
                 <a href="carrinho.html" class="addtocart"></a>
                 <a href="detalhes_prod.html" class="detail"></a>
             </div>        	
+            </div>
+            <div id="f3_3" class="box"> 
             <div class="product_box no_margin_right">
             	 <h3>Seoul</h3>
             	<a href="detalhes_prod.html"><img src="images/product/seo1.jpg" alt="Shoes 9" /></a>
@@ -281,9 +299,9 @@ ddsmoothmenu.init({
               <p class="product_price">$ 65</p>
                 <a href="carrinho.html" class="addtocart"></a>
                 <a href="detalhes_prod.html" class="detail"></a>
-            </div>  
-            <div class="cleaner"></div>
-                 	
+            </div> 
+            </div> 
+            <div id="f2_3" class="box"> 
             <div class="product_box">
             	<h3>Roma</h3>
             	<a href="detalhes_prod.html"><img src="images/product/roma1.jpg" alt="Shoes 7" /></a>
@@ -291,7 +309,9 @@ ddsmoothmenu.init({
               <p class="product_price">$ 30</p>
                 <a href="carrinho.html" class="addtocart"></a>
                 <a href="detalhes_prod.html" class="detail"></a>
-            </div>        	
+            </div>
+            </div>
+            <div id="f1_4" class="box">        	
             <div class="product_box">
             	<h3>Fortaleza</h3>
             	<a href="detalhes_prod.html"><img src="images/product/for1.jpg" alt="Shoes 8" /></a>
@@ -299,7 +319,9 @@ ddsmoothmenu.init({
             <p class="product_price">$ 220</p>
                 <a href="carrinho.html" class="addtocart"></a>
                 <a href="detalhes_prod.html" class="detail"></a>
-            </div>        	
+            </div>      
+            </div>
+            <div id="f4_5" class="box">   	
             <div class="product_box no_margin_right">
             	 <h3>São Paulo</h3>
             	<a href="detalhes_prod.html"><img src="images/product/sao1.jpg" alt="Shoes 9" /></a>
@@ -308,6 +330,13 @@ ddsmoothmenu.init({
                 <a href="carrinho.html" class="addtocart"></a>
                 <a href="detalhes_prod.html" class="detail"></a>
             </div>  
+            </div>
+        </div>
+            <div class="cleaner"></div>
+            <div class="cleaner"></div>
+                 	
+                 	
+            
         </div> 
         <div class="cleaner"></div>
     </div>
