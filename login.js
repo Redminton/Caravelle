@@ -1,4 +1,5 @@
 // Variáveis globais:
+    var dolar;
     var login_admin = 'admin';
     var senha_admin = 'admin';
     var dias2;
@@ -56,11 +57,10 @@ setInterval(coletarDias, 500);
         if (x === login_admin && y === senha_admin) {
             console.log('Acessando admin');
             window.location.href = 'admin.html';
+
         } else {
             alert('Usuário ou senha incorretos. Tente novamente.');
-           // console.log(dias2);
-             //console.log(obterDias());
-            //console.log(document.cookie);
+         
         }
    // } catch (error) {
    //     console.error('Erro ao coletar dias:', error);

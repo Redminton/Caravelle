@@ -1,5 +1,7 @@
 var x = 3; // quantidade de itens no carrinho;
-var total;
+var totalU;
+var dolar = 4.90;
+var  totalR;
 
 
 carrinhoDisplay();
@@ -60,13 +62,20 @@ function calcular_tudo() {
 }
 
 function mostrarTot(){
-    var valorTotal = document.getElementById('valorTotal');
-    total = localStorage.getItem('valor_total');
-    total = parseFloat(total);
-    console.log("total", total);
-    valorTotal.innerHTML = '$ ' + total;
-    console.log("total", total);
+    var valorTotalU = document.getElementById('valorTotalU');
+    var valorTotalR = document.getElementById('valorTotalR');
+    totalU = localStorage.getItem('valor_total');
+    totalU = parseFloat(totalU);
+   // console.log("total R$", totalR);
+  //  console.log('cotacao', dolar);
+   var dolarPagamento = localStorage.getItem('dolar');
+ //  console.log('cvegerger', dolarPagamento);
+    totalR = totalU * dolarPagamento;
+    console.log("total em USD", totalU);
+    valorTotalR.innerHTML = '$ ' + totalR;
+    valorTotalU.innerHTML = '$ ' + totalU;
 }
+
 function remover_tabela(){
     var tabela = document.getElementById('tabelaC');
     x -= 1;
@@ -76,5 +85,20 @@ function remover_tabela(){
         tabela.style.display = "none";
     }
 }
+
+
 setInterval(calcular_tudo, 500);
-setInterval(mostrarTot, 1000);
+setInterval(mostrarTot, 500);
+
+ pegarDolar();
+function pegarDolar(){
+    dolar = document.getElementById('cotacao').value;
+    localStorage.setItem('dolar', dolar);
+    var admin_dolar = document.getElementById('cotacaoAtual');
+    admin_dolar.innerHTML = 'R$' + dolar;
+    console.log('cotacao admin', dolar);
+
+    }
+
+
+setInterval(pegarDolar, 500);

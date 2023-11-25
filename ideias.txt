@@ -2,19 +2,13 @@
 to do:
 - botar um valor diferente para cada cidade
 
--página para imprimir cartão
-
 -admin - função de mudar a cotação do dolar
-
--página de cada cidade
-
 
 -calculadora de preço ? salvar usando  LocalStorage
 
 -fazer conversão dos valores
 
 -página de cada cidade
-
 -API
 -translate?
 -enviar mensagens?
