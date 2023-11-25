@@ -1,20 +1,21 @@
 
 to do:
 - botar um valor diferente para cada cidade
+
 -página para imprimir cartão
+
 -admin - função de mudar a cotação do dolar
--API
+
 -página de cada cidade
+
 - filtro dos continentes atraves de um botao
 
 -calculadora de preço ? salvar usando  LocalStorage
 
 -fazer conversão dos valores
- -fazer página de pagamento
 
+-página de cada cidade
 
-
-
+-API
 -translate?
 -enviar mensagens?
-https://www.iloveimg.com/pt/download/74cnmgxhm43zz602yg821t2mm0mz19npxvgrh66fv65g7c863ncr6smdn2nwd8pgbw0qnsc4b5bfkh1Af5h9htf4fw6r17f0grpdv56t1b47648rjhlqhx6fsjx7wcl1q385zsgqfAb0rq75phd6cpjq5cvmxsywm3hhzncdAhcqsh7gh3wq/2

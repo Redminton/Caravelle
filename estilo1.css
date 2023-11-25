@@ -410,6 +410,7 @@ h6 { font-size: 12px; margin: 0 0 5px; padding: 0; }
       border-radius: 8px;
   }
   .bot_imprimir {
+	margin-left: 2%;
 	margin-top: 10px;
 	padding: 10px;
 	background-color: #4CAF50;
