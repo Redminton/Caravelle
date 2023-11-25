@@ -4,7 +4,11 @@ var dolar = 4.90;
 var  totalR;
 
 
-carrinhoDisplay();
+setInterval(carrinhoDisplay, 500);
+setInterval(pegarDolar, 500);
+setInterval(calcular_tudo, 500);
+setInterval(mostrarTot, 500);
+
 
 function carrinhoDisplay(){
     var carrinhoDisplay = document.getElementById('carrinhoDisplay');
@@ -87,8 +91,6 @@ function remover_tabela(){
 }
 
 
-setInterval(calcular_tudo, 500);
-setInterval(mostrarTot, 500);
 
  pegarDolar();
 function pegarDolar(){
@@ -101,4 +103,3 @@ function pegarDolar(){
     }
 
 
-setInterval(pegarDolar, 500);
