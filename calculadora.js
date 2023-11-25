@@ -1,9 +1,10 @@
 var x = 3; // quantidade de itens no carrinho;
 var totalU;
-var dolar = 4.90;
+var dolar = 4.9;
 var  totalR;
+//localStorage.setItem('dolar', dolar);
 
-
+setInterval(mostrarTot, 500);
 setInterval(carrinhoDisplay, 500);
 setInterval(pegarDolar, 500);
 setInterval(calcular_tudo, 500);
@@ -75,7 +76,8 @@ function mostrarTot(){
    var dolarPagamento = localStorage.getItem('dolar');
  //  console.log('cvegerger', dolarPagamento);
     totalR = totalU * dolarPagamento;
-    console.log("total em USD", totalU);
+    console.log('xxxxxsfsef', dolarPagamento);
+//    console.log("total em USD", totalU);
     valorTotalR.innerHTML = '$ ' + totalR;
     valorTotalU.innerHTML = '$ ' + totalU;
 }
@@ -90,16 +92,12 @@ function remover_tabela(){
     }
 }
 
-
-
- pegarDolar();
 function pegarDolar(){
     dolar = document.getElementById('cotacao').value;
     localStorage.setItem('dolar', dolar);
     var admin_dolar = document.getElementById('cotacaoAtual');
     admin_dolar.innerHTML = 'R$' + dolar;
     console.log('cotacao admin', dolar);
-
     }
 
 
