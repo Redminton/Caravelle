@@ -12,7 +12,9 @@ body {
 	background-repeat: repeat;
 	background-image: url(images/templatemo_body.jpg)
 }
-
+.cent{
+	text-align: center;
+}
 a, a:link, a:visited { color: #0299aa; font-weight: normal; text-decoration: none }
 a:hover { text-decoration: underline; }
 
@@ -325,6 +327,31 @@ h6 { font-size: 12px; margin: 0 0 5px; padding: 0; }
 	border: none;
 	cursor: pointer;
 }
+.perfil {
+	max-width: 300px;
+	margin: 20px auto;
+	padding: 20px;
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .perfil img {
+	max-width: 100%;
+	border-radius: 50%;
+  }
+
+  .info {
+	margin-top: 20px;
+  }
+
+  .info h2 {
+	margin-bottom: 10px;
+  }
+
+  .info p {
+	margin: 0;
+  }
 
 
 
