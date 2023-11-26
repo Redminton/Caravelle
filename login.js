@@ -7,13 +7,16 @@
     var dias2;
     var diasElement;
     var dias;
-    var preco ;
+    var preco, precoR ;
     //console.log("cookies", document.cookies);
 
 
     document.addEventListener("DOMContentLoaded", function() {
         carregamento();
     });
+
+    setInterval(coletarDias, 500);
+
 
 
 // função de mostrar a página de login
@@ -38,8 +41,12 @@ function coletarDias() {
     //    console.log("preço", preco);
         var  preco_card = document.getElementById("preco_card");
         preco_card.innerHTML = '$ ' + preco;
+        precoR = preco * localStorage.getItem('dolar');
+       // console.log('terterttert', localStorage.getItem('dolar'));
+        var  preco_cardR = document.getElementById("preco_cardR");
+        preco_cardR.innerHTML = '$ ' + precoR;
 }
-setInterval(coletarDias, 500);
+
 /* function obterDias() {
     var cookies = document.cookie.split(';');
     for (var i = 0; i < cookies.length; i++) {
@@ -74,6 +81,13 @@ setInterval(coletarDias, 500);
    //     console.error('Erro ao coletar dias:', error);
  //   }
 }
+
+
+
+
+
+
+
 function descerPix() {
     var elemento2 = document.getElementById('imgPix');
     if (elemento2.style.display === 'none' || elemento2.style.display === '') {
@@ -97,6 +111,13 @@ function pagar(){
     } 
   }
  
+
+
+
+
+
+
+
   var shownDivs = [];
 
   function filtro(type) {

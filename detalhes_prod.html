@@ -58,8 +58,8 @@ ddsmoothmenu.init({
                 <li><a href="index.html" class="selected">Home</a></li>
                 <li><a href="products.html">Produtos</a>
                     <ul>
-                        <li><a href="#submenu1">Cidades no Brasl</a></li>
-                        <li><a href="#submenu2">Europa</a></li>
+                        <li><a href="#" onclick="filtro('bra')">Cidades no Brasl</a></li>
+                        <li><a href="#" onclick="filtro('eu')">Europa</a></li>
                         <li><a href="#submenu3">Ásia</a></li>
                         <li><a href="#submenu4">Africa</a></li>
                         <li><a href="#submenu5">Praias</a></li>
@@ -102,7 +102,7 @@ ddsmoothmenu.init({
                         <li><a href="detalhes_prod.html">São paulo</a></li>
                         <li><a href="detalhes_prod.html">Rio de Janeiro</a></li>
                         <li><a href="detalhes_prod.html">Tóquio</a></li>
-                        <li><a href="detalhes_prod.html">Cancún</a></li>
+                        <li><a href="cartao.html">Cancún</a></li>
                         <li><a href="detalhes_prod.html">Roma</a></li>
                         <li><a href="detalhes_prod.html">Paris</a></li>
                         <li><a href="detalhes_prod.html">Nápoles</a></li>
@@ -166,6 +166,8 @@ ddsmoothmenu.init({
 
 
 
+
+
         <div id="content" class="float_r">
         	<h1>Salvador</h1><div class="pais">BRAZIL</div>
             <div class="content_half float_l">
@@ -202,11 +204,15 @@ ddsmoothmenu.init({
                         <td>
                          <input  id="dias" type="number" value="1" min="1" style="width: 50px; text-align: right" />
                            <!-- <button type="button" id="bot_dias" onclick="coletarDias()">OK</button> -->
-                        </td>
+                        </td> 
+                    </tr> 
+                    <tr> 
+                        <td>Preço do Cartão <br> (em doláres U$): <br></td>
+                        <td> <p id="preco_card"></p></td>
                     </tr>
                     <tr>
-                        <td>Preço do Cartão: <br><p id="preco_card"></p></td>
-                       
+                        <td>Preço do Cartão  <br>(em Reais R$): <br></td>
+                        <td> <p id="preco_cardR"></p></td>
                     </tr>
                 </table>
                 <div class="cleaner h20"></div>
@@ -296,7 +302,6 @@ ddsmoothmenu.init({
         <div class="cleaner"></div>
     </div> 
     
-
 
 
 
