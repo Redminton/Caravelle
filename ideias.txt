@@ -8,7 +8,17 @@ to do:
 
 -fazer conversão dos valores
 
+
+
+
+Se der tempo:
 -página de cada cidade
 -API
 -translate?
 -enviar mensagens?
+
+
+
+
+Oberservações:
+-Não vai ter sistema de cadrastro (sem banco de dados é impossível);

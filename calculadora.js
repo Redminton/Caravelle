@@ -65,8 +65,14 @@ function calcular_tudo() {
     var precoTotal = precoNap + precoMum + precoMel + precoSal;
 
     var displayTot = document.getElementById('displayTot');
+    var displayTotR = document.getElementById('displayTotR');
     displayTot.innerHTML = '$' + precoTotal;
     localStorage.setItem('valor_total', precoTotal);
+
+    // preço em dolar
+    dolar = localStorage.getItem('dolar');
+    precoTotalR = precoTotal * dolar;
+    displayTotR.innerHTML = '$' + precoTotalR;
 }
 
 
