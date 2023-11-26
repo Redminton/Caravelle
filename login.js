@@ -1,7 +1,9 @@
 // Variáveis globais:
     var dolar;
-    var login_admin = 'admin';
-    var senha_admin = 'admin';
+    const login_admin = 'admin';
+    const senha_admin = 'admin';
+    const login_conta = 'conta';
+    const senha_conta = '12345';
     var dias2;
     var diasElement;
     var dias;
@@ -58,7 +60,13 @@ setInterval(coletarDias, 500);
             console.log('Acessando admin');
             window.location.href = 'admin.html';
 
-        } else {
+        } 
+        else if (x === login_conta && y === senha_conta) {
+            console.log('Acessando conta');
+            window.location.href = 'minha_conta.html';
+
+        } 
+        else {
             alert('Usuário ou senha incorretos. Tente novamente.');
          
         }

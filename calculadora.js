@@ -1,4 +1,4 @@
-var x = 3; // quantidade de itens no carrinho;
+var x = 4; // quantidade de itens no carrinho;
 var totalU;
 var dolar = 4.9;
 var  totalR;
@@ -16,6 +16,9 @@ function carrinhoDisplay(){
     carrinhoDisplay.innerHTML = x + ' itens';
  //   console.log('carrinho ', x);
 }
+
+
+
 
 
 // calcula com base na cidade
@@ -54,18 +57,21 @@ function removerCidade(cidadeId) {
 
 // Função para calcular o preço total
 function calcular_tudo() {
+    var precoSal = calcularPreco('salC', 'diasSal', 'opcoesSal', 'display_precoSal');
     var precoNap = calcularPreco('napC', 'diasNap', 'opcoesNap', 'display_precoNap');
     var precoMum = calcularPreco('mumC', 'diasMum', 'opcoesMum', 'display_precoMum');
     var precoMel = calcularPreco('melC', 'diasMel', 'opcoesMel', 'display_precoMel');
     // Calcular o preço total somando os preços individuais
-    var precoTotal = precoNap + precoMum + precoMel;
+    var precoTotal = precoNap + precoMum + precoMel + precoSal;
 
     var displayTot = document.getElementById('displayTot');
     displayTot.innerHTML = '$' + precoTotal;
     localStorage.setItem('valor_total', precoTotal);
-   // mostrarTot();
 }
 
+
+
+// funçao pagamento
 function mostrarTot(){
     var valorTotalU = document.getElementById('valorTotalU');
     var valorTotalR = document.getElementById('valorTotalR');
