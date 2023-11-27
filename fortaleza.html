@@ -1,0 +1,354 @@
+
+<html lang="pt-br">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<title>Caravelle.com</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="estilo1.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" type="text/css" href="css/ddsmoothmenu.css" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/ddsmoothmenu.js"></script>
+
+
+<script type="text/javascript">
+ddsmoothmenu.init({
+	mainmenuid: "top_nav", //menu DIV id
+	orientation: 'h', //Horizontal or vertical menu: Set to "h" or "v"
+	classname: 'ddsmoothmenu', //class added to menu's outer DIV
+	contentsource: "markup" //"markup" or ["container_id", "path_to_menu_file"]
+})
+</script>
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+<body>
+<div id="templatemo_body_wrapper">
+<div id="templatemo_wrapper">
+	<div id="templatemo_header">
+    	<div id="site_title"><h1><a href="index.html">Caravelle</a></h1></div>
+        <div id="header_right">
+        	<p>
+	        <a href="minha_conta.html">Minha conta</a> |  <a href="carrinho.html">Carrinho</a> 
+            | <a href="admin.html">Sair</a> | <button id="bot_login" onclick="login()">Entrar</button>
+            <p>
+            	Meu Carrinho: <strong><span id="carrinhoDisplay">x</span></strong> 
+                ( <a href="carrinho.html">Mostrar</a> )
+			</p>
+		</div>
+        <div class="cleaner"></div>
+    </div> 
+    <div id="templatemo_menubar">
+    	<div id="top_nav" class="ddsmoothmenu">
+            <ul>
+                <li><a href="index.html" class="selected">Home</a></li>
+                <li><a href="products.html">Produtos</a>
+                    <ul>
+                        <li><a href="#" onclick="filtro('bra')">Cidades no Brasl</a></li>
+                        <li><a href="#" onclick="filtro('eu')">Europa</a></li>
+                        <li><a href="#submenu3">Ásia</a></li>
+                        <li><a href="#submenu4">Africa</a></li>
+                        <li><a href="#submenu5">Praias</a></li>
+                        <li><a href="#submenu5">Américas</a></li>
+                        <li><a href="#submenu5">Oceania</a></li>
+                  </ul>
+                </li>
+                <li><a href="about.html">Sobre</a>
+                   <!-- <ul>
+                        <li><a href="#submenu1">Sub menu 1</a></li>
+                        <li><a href="#submenu2">Sub menu 2</a></li>
+                        <li><a href="#submenu3">Sub menu 3</a></li>
+                  </ul> -->
+                </li>
+                <li><a href="faqs.html">FAQs</a></li>
+                <li><a href="pagamento.html">Pagamento</a></li>
+                <li><a href="contact.html">Contato</a></li>
+            </ul>
+            <br style="clear: left" />
+        </div> 
+        <div id="templatemo_search">
+            <form action="#" method="get">
+              <input type="text" value=" " name="keyword" id="keyword" title="keyword" onfocus="clearText(this)" onblur="clearText(this)" class="txt_field" />
+              <input type="submit" name="Search" value=" " alt="Search" id="searchbutton" title="Search" class="sub_btn"  />
+            </form>
+        </div>
+    </div> 
+    
+
+
+    
+    <div id="templatemo_main">
+    	<div id="sidebar" class="float_l">
+        	<div class="sidebar_box"><span class="bottom"></span>
+            	<h3>Principais destinos</h3>   
+                <div class="content"> 
+                	<ul class="sidebar_list">
+                    	<li class="first"><a href="detalhes_prod.html">Salvador</a></li>
+                        <li><a href="detalhes_prod.html">Fortaleza</a></li>
+                        <li><a href="detalhes_prod.html">São paulo</a></li>
+                        <li><a href="detalhes_prod.html">Rio de Janeiro</a></li>
+                        <li><a href="detalhes_prod.html">Tóquio</a></li>
+                        <li><a href="cartao.html">Cancún</a></li>
+                        <li><a href="detalhes_prod.html">Roma</a></li>
+                        <li><a href="detalhes_prod.html">Paris</a></li>
+                        <li><a href="detalhes_prod.html">Nápoles</a></li>
+                        <li><a href="detalhes_prod.html">Seoul</a></li>
+                        <li><a href="detalhes_prod.html">Melbourne</a></li>
+                        <li><a href="detalhes_prod.html">Mumbai</a></li>
+                        <li><a href="detalhes_prod.html">Curitiba</a></li>
+                        <li><a href="detalhes_prod.html">Marrakesh</a></li>
+                        <li class="last"><a href="detalhes_prod.html">Luxor</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sidebar_box"><span class="bottom"></span>
+            	<h3>Top Semanal</h3>   
+                <div class="content"> 
+                	<div class="bs_box">
+                    	<a href="detalhes_prod.html"><img src="images/paris.png" alt="image" /></a>
+                        <h4><a href="detalhes_prod.html">Paris</a></h4>
+                        <p class="price">$8-500 a day</p>
+                        <div class="cleaner"></div>
+                    </div>
+                    <div class="bs_box">
+                    	<a href="detalhes_prod.html"><img src="images/cancun.png" alt="image" /></a>
+                        <h4><a href="detalhes_prod.html">Cancún</a></h4>
+                        <p class="price">$8-250 a day</p>
+                        <div class="cleaner"></div>
+                    </div>
+                    <div class="bs_box">
+                    	<a href="detalhes_prod.html"><img src="images/roma.png" alt="image" /></a>
+                        <h4><a href="detalhes_prod.html">Roma</a></h4>
+                        <p class="price">$8-400 a day</p>
+                        <div class="cleaner"></div>
+                    </div>
+                    <div class="bs_box">
+                    	<a href="detalhes_prod.html"><img src="images/seoul.png" alt="image" /></a>
+                        <h4><a href="detalhes_prod.html">Seoul</a></h4>
+                        <p class="price">$8-350 a day</p>
+                        <div class="cleaner"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div id="content" class="float_r">
+                <div id="login">  
+                    <div class="login-container">
+                        <h2>Acesse sua conta</h2>
+                        <form>
+                            <label for="usuario">Usuário:</label>
+                            <input type="text" id="usuario" name="username" required>
+                            <label for="senha">Senha:</label>
+                            <input type="password" id="senha" name="password" required>
+                
+                            <button type="button" id="bot_login2" onclick="acesso()">Entrar</button>
+                        </form>
+                    </div>
+                </div>
+                <br>
+        </div>
+        </div>
+
+
+
+
+
+        <div id="content" class="float_r">
+        	<h1>Fortaleza</h1><div class="pais">BRAZIL</div>
+            <div class="content_half float_l">
+        	<a  rel="lightbox[portfolio]" href="images/product/salvador1.jpeg"><img src="images/product/salvador2.jpeg" alt="image" /></a>
+            </div>
+            <div class="content_half float_r">
+                <table>
+                    <tr>
+                        <td width="160">Preço:</td>
+                        <td>$8-200 a day</td>
+                    </tr>
+                    <tr>
+                        <td>Disponível:</td>
+                        <td>Sim</td>
+                    </tr>
+                    <tr>
+                        <td>Classes:</td>
+                        <td>
+                            <select id="opcoes" name="opcao">
+                                <option value="100">A $ 100</option>
+                                <option value="50">B $ 50</option>
+                                <option value="20">C $ 20</option>
+                                <option value="200">S $ 200</option>
+                                <option value="8">LL $ 8</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td>Endereço:</td>
+                        <td>Av. Beira Mar, 3956 - Mucuripe, Fortaleza - CE, 60165-121</td>
+                    </tr>
+                    
+                    <tr>
+                    	<td>Quantidade de dias:</td>
+                        <td>
+                         <input  id="dias" type="number" value="1" min="1" style="width: 50px; text-align: right" />
+                           <!-- <button type="button" id="bot_dias" onclick="coletarDias()">OK</button> -->
+                        </td> 
+                    </tr> 
+                    <tr> 
+                        <td>Preço do Cartão <br> (em doláres U$): <br></td>
+                        <td> <p id="preco_card"></p></td>
+                    </tr>
+                    <tr>
+                        <td>Preço do Cartão  <br>(em Reais R$): <br></td>
+                        <td> <p id="preco_cardR"></p></td>
+                    </tr>
+                </table>
+                <div class="cleaner h20"></div>
+
+                <a href="carrinho.html" class="addtocart"></a>
+
+			</div>
+            <div class="cleaner h30"></div>
+            
+            <h5><strong>Descrição da Cidade</strong></h5>
+            <p>Fortaleza: O Destino Tropical de Encanto e Diversidade  Banhada pelo sol radiante do Nordeste brasileiro, Fortaleza se destaca como uma cidade que harmoniza paisagens deslumbrantes, cultura rica e hospitalidade calorosa. Aqui, cada esquina revela uma história única, enquanto seus principais pontos turísticos encantam visitantes de todo o mundo.
+                <br>
+                1. **Praia de Iracema:**
+                   Marca registrada de Fortaleza, a Praia de Iracema é um convite ao relaxamento e à diversão. Suas águas calmas são ideais para um mergulho revigorante, e a orla animada oferece bares, restaurantes e uma agitada vida noturna.
+                   <br>
+                2. **Dragão do Mar Centro de Arte e Cultura:**
+                   No coração da cidade, o Dragão do Mar é um complexo cultural que abriga museus, teatros e espaços para exposições. Uma imersão na rica história, arte e expressão cultural do Ceará.
+                   <br>
+                3. **Centro Cultural Banco do Nordeste (CCBNB):**
+                   Um enclave cultural, o CCBNB promove eventos, exposições e apresentações artísticas, destacando a diversidade e o talento da região.
+                   <br>
+                4. **Mercado Central:**
+                   Um verdadeiro tesouro de sabores e artesanato local, o Mercado Central é o lugar ideal para explorar a cultura cearense através de produtos regionais, lembranças e culinária típica.
+                   <br>
+                5. **Beira-Mar:**
+                   O calçadão da Beira-Mar é um convite para caminhadas ao pôr do sol, repleto de barracas de artesanato, atividades culturais e uma vista panorâmica do mar.
+                   <br>
+                6. **Ponte dos Ingleses:**
+                   Conhecida como Ponte Metálica, é um ícone de Fortaleza e um local popular para passeios noturnos, oferecendo vistas deslumbrantes da cidade iluminada.
+                   <br>
+                7. **Parque Ecológico do Cocó:**
+                   Uma pausa verde no cenário urbano, o Parque do Cocó é uma reserva ecológica que preserva a flora e fauna nativas, proporcionando trilhas e áreas para lazer ao ar livre.
+                   <br>
+                8. **Praia do Futuro:**
+                   Para os amantes de praias mais extensas, a Praia do Futuro oferece águas mornas e uma variedade de barracas que servem frutos do mar frescos e pratos típicos.
+                   <br>
+                Fortaleza, com sua mistura única de tradição e modernidade, 
+                é um convite para explorar as maravilhas do Nordeste brasileiro, onde a alegria contagia e a diversidade encanta a todos que a visitam.<br><br>
+                <strong>Centro Histórico:</strong>
+                   Salvador abriga um dos centros históricos mais bem preservados das Américas, 
+                   o Pelourinho. Suas ruas de paralelepípedos, casarões coloridos e igrejas barrocas 
+                   impressionam os visitantes. A Igreja do Bonfim, o Elevador Lacerda e a Praça da Sé 
+                   são pontos imperdíveis.
+                   <br>
+                <strong>Cultura Afro-Brasileira:</strong>
+                   A influência africana é evidente na música, dança e religião de Salvador. 
+                   O Olodum, grupo percussivo local, é famoso mundialmente, e o candomblé, 
+                   uma religião afro-brasileira, é praticado em muitos terreiros pela cidade.
+                   <br>
+                <strong>Praias Deslumbrantes:</strong>
+                   Salvador é abençoada com belas praias ao longo da sua costa. 
+                   Praia do Farol da Barra, Porto da Barra e Itapuã são algumas das praias mais populares, 
+                   oferecendo águas azuis, areias douradas e uma atmosfera descontraída.
+                   <br>
+                <strong>Gastronomia Baiana:</strong>
+                   A culinária baiana é uma explosão de sabores. Acarajé, moqueca, vatapá e o 
+                   abará são pratos típicos que você deve experimentar. Os mercados locais, 
+                   como o Mercado Modelo, são ótimos lugares para provar essas delícias.
+                   <br>
+                <strong>Festivais e Carnaval:</strong>
+                   Salvador é famosa por seus festivais e, especialmente, pelo Carnaval, 
+                   considerado um dos maiores e mais animados do mundo. Durante essa época, 
+                   as ruas são tomadas por multidões dançando ao som de trios elétricos e bandas locais.
+                   <br>
+                <strong>Artesanato e Mercados:</strong>
+                   Os mercados locais, como o Mercado Modelo e o São Joaquim, 
+                   são ótimos para comprar artesanato, lembranças e experimentar a 
+                   autenticidade da cultura local.
+                   <br>
+                <strong>Natureza Exuberante:</strong>
+                   Além das praias, Salvador possui áreas verdes encantadoras, 
+                   como o Parque Metropolitano de Pituaçu, que oferece trilhas ecológicas e 
+                   uma vista panorâmica da cidade.
+                   <br><br>
+                Em resumo, Salvador é uma cidade que encanta pelos contrastes, 
+                pela riqueza cultural e pelas experiências únicas que oferece aos visitantes. 
+                Seja explorando seu passado histórico ou desfrutando das belezas naturais, 
+                a capital baiana é um destino fascinante.
+                <br>
+            </p>	
+            
+          <div class="cleaner h50"></div>
+            
+
+
+
+            <h3>Mais Destinos</h3>
+        	<div class="product_box">
+            	<a href="detalhes_prod.html"><img src="images/product/001.jpg" alt="" /></a>
+                <h3>Curitiba</h3>
+                <p class="product_price">$ 100</p>
+                <a href="carrinho.html" class="addtocart"></a>
+                <a href="detalhes_prod.html" class="detail"></a>
+            </div>        	
+            <div class="product_box">
+            	<a href="detalhes_prod.html"><img src="images/product/002.jpg" alt="" /></a>
+                <h3>Marrakesh</h3>
+                <p class="product_price">$ 200</p>
+                <a href="carrinho.html" class="addtocart"></a>
+                <a href="detalhes_prod.html" class="detail"></a>
+            </div>        	
+            <div class="product_box no_margin_right">
+            	<a href="detalhes_prod.html"><img src="images/product/003.jpg" alt="" /></a>
+                <h3>Luxor</h3>
+                <p class="product_price">$ 120</p>
+                <a href="carrinho.html" class="addtocart"></a>
+                <a href="detalhes_prod.html" class="detail"></a>
+            </div>     
+        </div> 
+        <div class="cleaner"></div>
+    </div> 
+    
+
+
+
+    
+    <div id="templatemo_footer">
+    	<p><a href="index.html">início</a> 
+            | <a href="products.html">Produtos</a> 
+            | <a href="about.html">Sobre</a> 
+            | <a href="faqs.html">FAQs</a> 
+            | <a href="pagamento.html">Pagamento</a> 
+            | <a href="contact.html">Contato</a>
+		</p>
+    	Copyright © 1500 <a href="http://redminton.github.io">Caravelle LTDA</a>
+    </div> 
+</div> 
+</div> 
+<script>
+    document.getElementById('senha').addEventListener('keydown', function (event) {
+        if (event.key === 'Enter') {
+            acesso();
+        }
+    });
+    </script>
+    <script type="text/javascript" src="login.js"></script>
+    <script type="text/javascript" src="calculadora.js"></script>
+</body>
+</html>
