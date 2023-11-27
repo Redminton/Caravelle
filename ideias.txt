@@ -6,6 +6,8 @@ to do:
 
 -Sistema de pesquisa;
 
+
+
 Se der tempo:
 
 -melhoria no sistema de carrinho
