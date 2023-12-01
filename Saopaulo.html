@@ -29,6 +29,13 @@ ddsmoothmenu.init({
 
 
 
+
+
+
+
+
+ 
+
 <body>
 <div id="templatemo_body_wrapper">
 <div id="templatemo_wrapper">
@@ -51,8 +58,8 @@ ddsmoothmenu.init({
                 <li><a href="index.html" class="selected">Home</a></li>
                 <li><a href="products.html">Produtos</a>
                     <ul>
-                        <li><a href="#submenu1">Cidades no Brasl</a></li>
-                        <li><a href="#submenu2">Europa</a></li>
+                        <li><a href="#" onclick="filtro('bra')">Cidades no Brasl</a></li>
+                        <li><a href="#" onclick="filtro('eu')">Europa</a></li>
                         <li><a href="#submenu3">Ásia</a></li>
                         <li><a href="#submenu4">Africa</a></li>
                         <li><a href="#submenu5">Praias</a></li>
@@ -95,7 +102,7 @@ ddsmoothmenu.init({
                         <li><a href="Saopaulo.html">São paulo</a></li>
                         <li><a href="detalhes_prod.html">Rio de Janeiro</a></li>
                         <li><a href="detalhes_prod.html">Tóquio</a></li>
-                        <li><a href="detalhes_prod.html">Cancún</a></li>
+                        <li><a href="cartao.html">Cancún</a></li>
                         <li><a href="detalhes_prod.html">Roma</a></li>
                         <li><a href="detalhes_prod.html">Paris</a></li>
                         <li><a href="detalhes_prod.html">Nápoles</a></li>
@@ -161,87 +168,131 @@ ddsmoothmenu.init({
 
 
 
-
         <div id="content" class="float_r">
-        	<h2>Pagamento</h2>
-            <h5><strong>Informações para a compra</strong></h5>
-            <div class="content_half float_l checkout">
-				Nome Completo (deve ser o mesmo do cartão de crédito):  
-                  <input type="text"  style="width:300px;"  />
-                <br />
-                <br />
-              Endereço:
-				<input type="text"  style="width:300px;"  />
-                <br />
-                <br />
-              Cidade:
-                <input type="text"  style="width:300px;"  />
-               
+        	<h1>São Paulo</h1><div class="pais">BRAZIL</div>
+            <div class="content_half float_l">
+        	<a  rel="lightbox[portfolio]" href="images/product/sao2.jpg"><img src="images/product/sao2.jpg" alt="image" /></a>
             </div>
-            
-            <div class="content_half float_r checkout">
-            	E-MAIL
-				<input type="text"  style="width:300px;"  />
-                <br />
-                <br />
-          Telefone<br />
-				<!--<span style="font-size:10px">
-                    Please, specify your reachable phone number. YOU MAY BE GIVEN A CALL TO VERIFY AND COMPLETE THE ORDER.</span>
-                -->
-                    <input type="text"  style="width:300px;"  />
-                    <br />
-                <br />
-                País:
-                <input type="text"  style="width:300px;"  />
-            </div>
-            
-            <div class="cleaner h50"></div>
-            <h3>Carrinho de Compras</h3>
-            <h4>TOTAL R$: <p id="valorTotalR"><strong>$</strong></p></h4>
-            <h4>TOTAL U$: <p id="valorTotalU"><strong>$</strong></p></h4>
-			<p><input type="checkbox" />
-			Eu aceito os <a href="#">termos de uso</a> deste site.</p>
-            <button class="botaopag" onclick="pagar()">Pagar</button>
-          <br><br>
+            <div class="content_half float_r">
+                <table>
+                    <tr>
+                        <td width="160">Preço:</td>
+                        <td>$8-200 a day</td>
+                    </tr>
+                    <tr>
+                        <td>Disponível:</td>
+                        <td>Sim</td>
+                    </tr>
+                    <tr>
+                        <td>Classes:</td>
+                        <td>
+                            <select id="opcoes" name="opcao">
+                                <option value="75">A $ 75</option>
+                                <option value="50">B $ 50</option>
+                                <option value="20">C $ 20</option>
+                                <option value="150">S $ 150</option>
+                                <option value="8">LL $ 8</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td>Endereço:</td>
+                        <td>Av. Beira Mar, 3956 - Mucuripe, Fortaleza - CE, 60165-121</td>
+                    </tr>
+                    
+                    <tr>
+                    	<td>Quantidade de dias:</td>
+                        <td>
+                         <input  id="dias" type="number" value="1" min="1" style="width: 50px; text-align: right" />
+                           <!-- <button type="button" id="bot_dias" onclick="coletarDias()">OK</button> -->
+                        </td> 
+                    </tr> 
+                    <tr> 
+                        <td>Preço do Cartão <br> (em doláres U$): <br></td>
+                        <td> <p id="preco_card"></p></td>
+                    </tr>
+                    <tr>
+                        <td>Preço do Cartão  <br>(em Reais R$): <br></td>
+                        <td> <p id="preco_cardR"></p></td>
+                    </tr>
+                </table>
+                <div class="cleaner h20"></div>
 
-            <table id="tabelapag" style="border:1px solid #CCCCCC;" width="100%">
-                <tr>
-                    <td height="80px"> <img src="images/paypal.gif" alt="paypal" /></td>
-                    <td width="400px;" style="padding: 0px 20px;">Recomendado se você tiver uma conta PayPal. 
-                        Aprovação imediata.
-                    </td>
-                    <td><a href="https://www.paypal.com/br/home" class="more">PAYPAL</a></td>
-                </tr>
-                <tr>
-                    <td  height="80px"><img src="images/visa.png" alt="paypal" />
-                    </td>
-                    <td  width="400px;" style="padding: 0px 20px;">
-                        Pague com Mastercard ou Visa, o método mais comum.</td>
-                    <td><a href="#" class="more">MasterCard/Visa</a></td>
-                </tr>
-                <tr>
-                    <td  height="80px"><button  id="botPix" onclick="descerPix()">
-                        <img src="images/pix.png" alt="paypal" /></button>
-                    </td>
-                    <td  width="400px;" style="padding: 0px 20px;">
-                        Pague com Pix, o método mais rápido e seguro.</td>
-                    <td>
-                        <a href="images/qrcode-pix.png" class="more">Pagar com Pix</a>
-                    </td>
-                </tr>
-            </table><br><br>
-            <a href="cartao.html"><button class="botaopag" id="bot_verifica">Verificar pagamento</button></a>
-            <div id="divPix">
-                <div id="imgPix" class="entrada">
-                  <img src="images/qrcode-pix.png" alt="Imagem">
-                </div>
-            </div>
+                <a href="carrinho.html" class="addtocart"></a>
+
+			</div>
+            <div class="cleaner h30"></div>
+            
+            <h5><strong>Descrição da Cidade</strong></h5>
+            <p>São Paulo, a gigante brasileira, é uma metrópole vibrante e diversificada que 
+                captura a essência da modernidade, da arte e da diversidade cultural. 
+                Com uma energia incessante, seus principais pontos turísticos refletem a riqueza e 
+                a complexidade dessa cidade multifacetada.
+                <br><br>
+                <strong>1. Avenida Paulista:</strong>
+                O coração financeiro e cultural da cidade, a Avenida Paulista é famosa por seus 
+                arranha-céus imponentes, centros culturais, shoppings, restaurantes e a agitada vida de rua.
+                <br>
+                <strong>2. Parque Ibirapuera:</strong><br>
+                Um oásis urbano, o Parque Ibirapuera oferece vastos gramados, lagos, museus notáveis como o MAM (Museu de Arte Moderna) e o MAC (Museu de Arte Contemporânea), além de uma atmosfera de lazer e tranquilidade.
+                <br>
+                <strong>3. Museu de Arte de São Paulo (MASP):</strong>
+                Uma icônica estrutura arquitetônica, o MASP abriga uma vasta coleção de arte ocidental e brasileira, incluindo obras de mestres como Van Gogh e Portinari.
+                <br>
+                <strong>4. Mercado Municipal (Mercadão):</strong>
+                Um paraíso gastronômico, o Mercadão é conhecido por suas barracas coloridas oferecendo frutas, especiarias, queijos e iguarias, proporcionando uma experiência sensorial única.
+                <br>
+                <strong>5. Bairro da Liberdade:</strong>
+                A casa da maior comunidade japonesa fora do Japão, a Liberdade é um bairro repleto de lanternas, restaurantes típicos, lojas de produtos orientais e eventos culturais.
+                <br>
+                <strong>6. Pátio do Colégio:</strong>
+                O local onde São Paulo foi fundada, o Pátio do Colégio é um marco histórico que oferece uma visão da cidade em seus primórdios.
+                <br>
+                <strong>7. Estádio do Morumbi:</strong>
+                O maior estádio particular do Brasil, o Morumbi é um templo do futebol e casa do São Paulo Futebol Clube.
+                <br>
+                <strong>8. Praia do Futuro:</strong>
+                   Para os amantes de praias mais extensas, a Praia do Futuro oferece águas mornas e uma variedade de barracas que servem frutos do mar frescos e pratos típicos.
+                   <br><br>
+                Fortaleza, com sua mistura única de tradição e modernidade, 
+                é um convite para explorar as maravilhas do Nordeste brasileiro, 
+                onde a alegria contagia e a diversidade encanta a todos que a visitam.<br><br>
+          
+            </p>	
+            
+          <div class="cleaner h50"></div>
+            
+
+
+
+            <h3>Mais Destinos</h3>
+        	<div class="product_box">
+            	<a href="detalhes_prod.html"><img src="images/product/001.jpg" alt="" /></a>
+                <h3>Curitiba</h3>
+                <p class="product_price">$ 100</p>
+                <a href="carrinho.html" class="addtocart"></a>
+                <a href="detalhes_prod.html" class="detail"></a>
+            </div>        	
+            <div class="product_box">
+            	<a href="detalhes_prod.html"><img src="images/product/002.jpg" alt="" /></a>
+                <h3>Marrakesh</h3>
+                <p class="product_price">$ 200</p>
+                <a href="carrinho.html" class="addtocart"></a>
+                <a href="detalhes_prod.html" class="detail"></a>
+            </div>        	
+            <div class="product_box no_margin_right">
+            	<a href="detalhes_prod.html"><img src="images/product/003.jpg" alt="" /></a>
+                <h3>Luxor</h3>
+                <p class="product_price">$ 120</p>
+                <a href="carrinho.html" class="addtocart"></a>
+                <a href="detalhes_prod.html" class="detail"></a>
+            </div>     
         </div> 
         <div class="cleaner"></div>
     </div> 
-
-
     
+
+
+
     
     <div id="templatemo_footer">
     	<p><a href="index.html">início</a> 
