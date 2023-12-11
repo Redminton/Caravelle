@@ -1,10 +1,6 @@
-
+﻿
 to do:
--botar um valor diferente para cada cidade
 
--no mínimo 3 páginas de locais (2 atualmente);
-
--Sistema de pesquisa;
 
 
 
@@ -15,6 +11,6 @@ Se der tempo:
 -API -
 -translate?
 -enviar mensagens?
-
+-Sistema de pesquisa;
 Oberservações:
 -Não vai ter sistema de cadastro (sem banco de dados é impossível);
