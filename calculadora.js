@@ -72,7 +72,7 @@ function calcular_tudo() {
     // preço em dolar
     dolar = localStorage.getItem('dolar');
     precoTotalR = precoTotal * dolar;
-    displayTotR.innerHTML = '$' + precoTotalR;
+    displayTotR.innerHTML = '$' +  Math.round(precoTotalR);
 }
 
 
@@ -90,7 +90,7 @@ function mostrarTot(){
     totalR = totalU * dolarPagamento;
     console.log('xxxxxsfsef', dolarPagamento);
 //    console.log("total em USD", totalU);
-    valorTotalR.innerHTML = '$ ' + totalR;
+    valorTotalR.innerHTML = '$ ' +  Math.round(totalR);
     valorTotalU.innerHTML = '$ ' + totalU;
 }
 

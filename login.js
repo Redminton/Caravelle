@@ -44,7 +44,7 @@ function coletarDias() {
         precoR = preco * localStorage.getItem('dolar');
        // console.log('terterttert', localStorage.getItem('dolar'));
         var  preco_cardR = document.getElementById("preco_cardR");
-        preco_cardR.innerHTML = '$ ' + precoR;
+        preco_cardR.innerHTML = '$ ' + Math.round(precoR);
 }
 
 /* function obterDias() {
