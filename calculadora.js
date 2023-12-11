@@ -103,7 +103,7 @@ function remover_tabela(){
         tabela.style.display = "none";
     }
 }
-
+// muda o valor do dolar na página de admin e guarda no local storage
 function pegarDolar(){
     dolar = document.getElementById('cotacao').value;
     localStorage.setItem('dolar', dolar);

@@ -87,7 +87,7 @@ function coletarDias() {
 
 
 
-
+// funções de pagamento
 function descerPix() {
     var elemento2 = document.getElementById('imgPix');
     if (elemento2.style.display === 'none' || elemento2.style.display === '') {
